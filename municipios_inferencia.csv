@@ -1,0 +1,9 @@
+system:index,altitude_m,estado,latitude,longitude,municipio,.geo
+0,465.0,Paraná,-25.246105072875647,-53.761804404156635,Céu Azul,"{""type"":""MultiPoint"",""coordinates"":[]}"
+1,401.0,Paraná,-25.26315869442421,-54.091925548367826,Medianeira,"{""type"":""MultiPoint"",""coordinates"":[]}"
+2,308.0,Paraná,-25.095572637057863,-54.241311047276646,Missal,"{""type"":""MultiPoint"",""coordinates"":[]}"
+3,326.0,Paraná,-24.433408703017157,-54.18603748594181,Mercedes,"{""type"":""MultiPoint"",""coordinates"":[]}"
+4,582.0,Paraná,-23.468233695035927,-51.86704810167693,Sarandi,"{""type"":""MultiPoint"",""coordinates"":[]}"
+5,401.0,Paraná,-25.26315869442421,-54.091925548367826,Medianeira,"{""type"":""MultiPoint"",""coordinates"":[]}"
+6,406.0,Paraná,-24.444843361935742,-53.79170795050867,Maripá,"{""type"":""MultiPoint"",""coordinates"":[]}"
+7,300.0,Paraná,-24.274625001122807,-53.824059920507466,Palotina,"{""type"":""MultiPoint"",""coordinates"":[]}"
