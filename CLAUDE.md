@@ -8,12 +8,29 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 Paraná, em notebooks Jupyter (`.ipynb`) executados localmente (não é um pacote instalável, não há
 build/lint/test — é um repositório de análise/pesquisa):
 
-1. **Predição de produtividade via balanço hídrico + ML** (`01`–`04`, pré-existente, migrado do
+1. **Predição de produtividade via balanço hídrico + ML** (`01`–`05`, pré-existente, migrado do
    Google Colab).
 2. **Análise de custos de produção do milho 2ª safra (CONAB)** (`06` + `07_analise_custos_milho_pr`,
    criado nesta sessão).
 
-Não há numeração `05` — os dois pipelines são independentes; não assuma que um depende do outro.
+Os dois pipelines são independentes — não assuma que um depende do outro.
+
+## Fluxo de trabalho neste repositório (git + Colab em paralelo)
+
+Este repo é editado por **dois caminhos ao mesmo tempo**: localmente aqui (VS Code/Claude Code) e
+diretamente pelo usuário no **Google Colab** (os notebooks têm badge "Open in Colab" e o Colab
+commita direto no GitHub, ex. commits "Criado usando o Colab"). Antes de commitar/dar push:
+
+- Sempre rode `git fetch` / `git status` primeiro — é comum o `origin/main` ter avançado por commits
+  feitos via Colab que não existem no clone local (já aconteceu: um push local foi rejeitado porque
+  o Colab tinha adicionado `05_inferencias.ipynb` nesse meio-tempo). Resolver com merge normal
+  (`git pull origin main --no-rebase`) costuma bastar, sem conflito, já que os dois lados mexem em
+  arquivos diferentes na maior parte das vezes.
+- A identidade do git (`user.name`/`user.email`) é configurada **localmente** neste repositório
+  (não `--global`) — confirme com o usuário antes de definir/alterar.
+- Push por HTTPS pode falhar com `HTTP 408`/timeout ao enviar o `.xls` (~2.5MB) ou notebooks grandes
+  com gráficos embutidos; se acontecer, `git config http.postBuffer 524288000` (local, já
+  configurado neste repo) resolve — reexecute o `git push` depois.
 
 ## Ambiente Python — ATENÇÃO (duas instalações no mesmo PC)
 
@@ -71,9 +88,12 @@ Fluxo sequencial entre os 4 notebooks (cada um consome a saída do anterior):
    por fase), e avalia correlação entre features e `Yield_obs`.
 4. **`04_treinamento_ML.ipynb`** — treina e compara RandomForest, XGBoost, LightGBM, ExtraTrees,
    MLP (scikit-learn/xgboost/lightgbm/optuna) para prever produtividade a partir de `df_wide.csv`.
-   Exporta os modelos treinados (`RandomForest.joblib`, `XGBoost.joblib`, `LightGBM.joblib`) e roda
-   inferência sobre `df_wide_inferencia.csv`/`municipios_inferencia.csv`, gerando
-   `resultados_inferencia.csv` (MAE/MSE/RMSE/R²/MAPE por município).
+   Exporta os modelos treinados (`RandomForest.joblib`, `XGBoost.joblib`, `LightGBM.joblib`).
+5. **`05_inferencias.ipynb`** — carrega os modelos treinados, prepara os dados dos municípios de
+   inferência (baixa dados, refaz o feature engineering) e roda a inferência propriamente dita,
+   gerando `resultados_inferencia.csv` (MAE/MSE/RMSE/R²/MAPE por município). Chegou ao repo local via
+   merge de um commit feito direto no Colab (não foi criado nesta sessão) — ver seção de fluxo de
+   trabalho acima.
 
 Os notebooks têm badge "Open in Colab" e trechos com `google.colab`/`!pip install` — foram escritos
 originalmente para Colab; ao rodar localmente, células que dependem do Colab (`from google.colab
