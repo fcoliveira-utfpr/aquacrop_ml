@@ -160,3 +160,38 @@ Lê `df_pr_long.csv` e faz:
 
 Se o `.xls` fonte for atualizado (nova série histórica da CONAB), reexecute `06_custos_milho_parana.ipynb`
 antes de `07_analise_custos_milho_pr.ipynb`, na ordem.
+
+---
+
+## Notebook 10 — Análise integrada (risco climático + produtividade prevista + econômico)
+
+`10_analise_integrada.ipynb` estende a classificação de aptidão do `09_analise_custo_modelos.ipynb`
+adicionando a **produtividade prevista pelo ExtraTrees** como um terceiro eixo independente na
+recomendação de melhor data de semeadura (antes só clima via ISNA + econômico via DERAL).
+
+- **Não refaz simulação nem inferência** — reaproveita os CSVs já exportados pelo `09`
+  (`previsoes_oeste_pr.csv`, `risco_climatico_oeste_pr.csv`, `risco_economico_oeste_pr.csv`). Se o
+  `09` for reexecutado com dados novos, reexecute este notebook em seguida.
+- **Seções 1–4** — soma ordinal de tercis dos 3 eixos (clima + produtividade + econômico), mesma
+  lógica do `09`. Descobriu-se que ISNA e produtividade prevista têm correlação forte (Pearson
+  r≈0,85) — o componente hídrico acaba sendo ponderado duas vezes nessa abordagem.
+- **Seções 5–6** — resolve a redundância acima com **PCA** (reduz clima+produtividade a um único
+  `componente_agroclimatico`, explica ~92,5% da variância) seguido de **TOPSIS** (2 critérios:
+  componente agroclimático × margem econômica, pesos 50/50 ajustáveis na variável `pesos`) para
+  gerar um `topsis_score` contínuo (0–1) — mais robusto que a soma ordinal por preservar magnitude
+  e não contar a água duas vezes. A recomendação de melhor data via TOPSIS muda em relação à do
+  `09` (2 eixos) em só 8/50 municípios, contra 35/50 na soma ordinal — o TOPSIS fica bem mais
+  próximo do comportamento original por resolver a redundância hídrica.
+- **Ambiente local (Mac, diferente do PC Windows descrito acima)**: `.venv/` criado na raiz do repo
+  (fora do git, ver `.gitignore`) com `pandas numpy matplotlib scipy joblib scikit-learn requests
+  ipywidgets nbformat nbclient ipykernel xlrd`; kernel Jupyter registrado como `aquacrop_ml_venv`
+  via `python -m ipykernel install --user --name aquacrop_ml_venv`.
+
+### Arquivos gerados por este notebook
+
+| Arquivo | Conteúdo |
+|---|---|
+| `matriz_integrada_oeste_pr.csv` | 3 eixos + score ordinal por tercis (município × data de semeadura) |
+| `melhor_data_semeadura_integrada.csv` | Melhor data por município via score ordinal |
+| `matriz_topsis_oeste_pr.csv` | 3 eixos + `componente_agroclimatico` (PCA) + `topsis_score` |
+| `melhor_data_semeadura_topsis.csv` | Melhor data por município via TOPSIS |
