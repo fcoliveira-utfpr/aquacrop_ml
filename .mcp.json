@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "aquacrop_ml": {
+      "command": "C:\\Users\\fabri\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+      "args": ["mcp_maiz/server.py"],
+      "cwd": "${workspaceFolder}"
+    }
+  }
+}

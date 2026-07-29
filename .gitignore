@@ -1,2 +1,5 @@
 *.joblib
 .venv/
+mcp_maiz/.cache/
+__pycache__/
+*.pyc
