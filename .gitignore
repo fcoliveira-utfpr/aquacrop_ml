@@ -3,3 +3,6 @@
 mcp_maiz/.cache/
 __pycache__/
 *.pyc
+bibliografia/
+.claude/settings.local.json
+.DS_Store

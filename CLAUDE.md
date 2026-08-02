@@ -10,8 +10,9 @@ build/lint/test — é um repositório de análise/pesquisa):
 
 1. **Predição de produtividade via balanço hídrico + ML** (`01`–`05`, pré-existente, migrado do
    Google Colab).
-2. **Análise de custos de produção do milho 2ª safra (CONAB)** (`06` + `07_analise_custos_milho_pr`,
-   criado nesta sessão).
+2. **Análise de custos de produção do milho 2ª safra** (`06`–`10`) — a fonte de custo evoluiu de
+   CONAB para **DERAL** no meio do trabalho; ver nota de descontinuação na seção "Pipeline 2"
+   abaixo antes de mexer em custo.
 
 Os dois pipelines são independentes — não assuma que um depende do outro.
 
@@ -101,10 +102,19 @@ import files`, uploads interativos) precisam ser adaptadas ou puladas.
 
 ---
 
-## Pipeline 2 — Custos de produção do milho 2ª safra no Paraná (CONAB)
+## Pipeline 2 — Custos de produção do milho 2ª safra no Paraná (CONAB) — DESCONTINUADO
 
-Criado nesta sessão a partir de `milho_2a_safra_serie_historica_2005-2025.xls` (série histórica
-CONAB de custo de produção, 254 abas — uma por combinação cidade-UF-ano, ex. `Londrina-PR-2020`).
+> **A fonte de custo da CONAB foi descartada em favor do DERAL** (ver notebook `09`, seção 6): o
+> pacote CONAB usado aqui é "Agricultura Empresarial — Alta Tecnologia — OGM", calibrado pra uma
+> produtividade (~6.260 kg/ha) muito acima do que a simulação de balanço hídrico atinge, o que
+> distorcia a classificação de viabilidade. Os notebooks `06`/`07` e os CSVs abaixo **continuam no
+> repo como referência histórica**, mas nenhuma análise nova deve depender deles — use o eixo
+> econômico DERAL do notebook `09` (`custo_deral_milho_safrinha.csv`,
+> `risco_economico_oeste_pr.csv`).
+
+Criado numa sessão anterior a partir de `milho_2a_safra_serie_historica_2005-2025.xls` (série
+histórica CONAB de custo de produção, 254 abas — uma por combinação cidade-UF-ano, ex.
+`Londrina-PR-2020`).
 
 ### `06_custos_milho_parana.ipynb` — extração
 
@@ -160,6 +170,46 @@ Lê `df_pr_long.csv` e faz:
 
 Se o `.xls` fonte for atualizado (nova série histórica da CONAB), reexecute `06_custos_milho_parana.ipynb`
 antes de `07_analise_custos_milho_pr.ipynb`, na ordem.
+
+---
+
+## Pipeline 2 (atual) — Eixo econômico via DERAL (`08`–`10`)
+
+- **`08_precos.ipynb`** — série de preços do milho (IPEA/SEAB-Deral), usada como receita de
+  referência no eixo econômico.
+- **`09_analise_custo_modelos.ipynb`, seção 6** — custo de referência **SEAB/DERAL "Estimativa de
+  Custos de Produção — Milho Safrinha"** (`nhistorico_94.xls`, aba `milho_saf`), 26 safras
+  (1999/00–2024/25), decomposto em `custo_fixo_real` e `custo_var_kg_real` (deflacionados pelo
+  IPCA) → exportado como `custo_deral_milho_safrinha.csv`. A margem por (município, data de
+  semeadura, ano) é `receita − (custo_fixo + custo_var_kg × produtividade_prevista)`; o
+  `risco_economico` (Menos viável / Viabilidade intermediária / Mais viável) é um **tercil relativo**
+  da margem média entre as 300 combinações — não um corte absoluto de viabilidade.
+- **Seção 6.1 — sensibilidade ao rateio do custo fixo**: o cenário principal atribui 100% do
+  `custo_fixo` (terra, depreciação, administração) ao milho safrinha, como se fosse plantado
+  isolado; mas na prática ele **sucede a soja** no mesmo ano-agrícola, na mesma área/máquina, então
+  parte desse custo fixo já é amortizada pela cultura principal. A célula 6.1 recalcula tudo com
+  `fator_rateio_custo_fixo = 0.5` (`calcular_risco_economico(fator, rotulo)`, reaproveitada pros dois
+  cenários) e exporta `risco_economico_oeste_pr_rateio50.csv`, comparando com o cenário de 100%.
+  - **Achado**: em termos **absolutos** o efeito é grande — margem média das 300 combinações vai de
+    ‑R$898/ha (100% do custo fixo, 0/300 combinações com margem ≥ 0) para +R$3/ha (rateio 50%,
+    172/300 com margem ≥ 0), e o % médio de anos que cobrem o custo sobe de 5,8% para 47,7%.
+  - Em termos **relativos**, porém, `risco_economico` (tercil) não muda em nenhuma das 300
+    combinações — o rateio desconta um valor praticamente constante por ano de todas as
+    combinações município×data, então a ordenação relativa entre elas não se altera. Ou seja: o
+    rateio muda a leitura de "o milho safrinha se paga sozinho?" (absoluta), mas não muda "qual
+    município/data é relativamente melhor que outro?" (o que alimenta a matriz do notebook 10).
+  - Cenário principal (100%, `risco_economico_oeste_pr.csv`) continua sendo o que alimenta as seções
+    7-8 e o notebook `10` — o de 50% é só uma referência de sensibilidade por enquanto.
+- **Seção 6.2 — rateio proporcional aos dias de ocupação**: não há literatura encontrada que
+  justifique especificamente 50%; a alternativa mais defensável é ratear o custo fixo proporcional
+  ao tempo que cada cultura ocupa a área (é esse tempo de uso que consome depreciação de
+  máquina/oportunidade da terra). Com ciclos médios aproximados (soja ~160 dias, milho safrinha
+  ~110 dias, ajustáveis em `CICLO_SOJA_DIAS`/`CICLO_MILHO_SAFRINHA_DIAS`), o fator fica em **~41%**
+  — exportado em `risco_economico_oeste_pr_rateio_proporcional.csv`. Resultado: margem média das 300
+  combinações sobe pra **+R$170/ha**, com **300/300 combinações** cobrindo o custo em média (contra
+  0/300 no cenário de 100% e 172/300 no de 50%) — mas, como nos outros cenários, a classificação
+  relativa (`risco_economico`, tercil) continua **igual em 100% das combinações**, porque o desconto
+  segue sendo aproximadamente uniforme por ano entre município×data.
 
 ---
 
