@@ -1,51 +1,51 @@
 ﻿municipio,data_semeadura,risco_climatico,isna_medio,risco_economico,pct_anos_cobre_custo,margem_media_rs_ha
-Anahy,05/03/,Baixo risco climático,0.7095964613767664,Mais viável,7.7,-871.1841435883041
-Assis Chateaubriand,05/02/,Baixo risco climático,0.7121457514299588,Viabilidade intermediária,7.7,-908.7491295905592
-Boa Vista da Aparecida,05/02/,Baixo risco climático,0.7571704753342134,Mais viável,3.8,-873.3012915861408
-Braganey,05/02/,Baixo risco climático,0.7750169967399642,Mais viável,3.8,-849.8007488384769
-Cafelândia,15/03/,Baixo risco climático,0.7041147518172529,Mais viável,7.7,-872.6982557150952
-Campo Bonito,05/02/,Baixo risco climático,0.7746723245647215,Mais viável,3.8,-848.4144025156747
-Capitão Leônidas Marques,25/03/,Baixo risco climático,0.7584358204781867,Mais viável,7.7,-866.1951510769351
-Cascavel,05/02/,Baixo risco climático,0.7693786822379942,Mais viável,3.8,-851.5678447569696
-Catanduvas,05/02/,Baixo risco climático,0.7784912185788306,Mais viável,3.8,-838.6499459561109
-Corbélia,05/02/,Baixo risco climático,0.7473366087974344,Mais viável,7.7,-873.4944146161156
-Céu Azul,15/03/,Baixo risco climático,0.7403247117966058,Mais viável,7.7,-867.569435946517
-Diamante D'Oeste,25/03/,Baixo risco climático,0.7122999577748649,Menos viável,3.8,-953.7102373506697
-Diamante do Sul,05/02/,Baixo risco climático,0.7865006425967768,Mais viável,3.8,-835.8134452514698
-Entre Rios do Oeste,25/03/,Baixo risco climático,0.6836398239872663,Menos viável,3.8,-955.2078374530977
-Formosa do Oeste,05/02/,Baixo risco climático,0.7349893275277244,Viabilidade intermediária,7.7,-885.7174615202827
-Foz do Iguaçu,05/03/,Baixo risco climático,0.6640004914891117,Mais viável,7.7,-864.4872985917622
-Guaraniaçu,05/02/,Baixo risco climático,0.7802500226320619,Mais viável,3.8,-840.8353850057622
-Guaíra,05/02/,Baixo risco climático,0.6842628881325848,Menos viável,7.7,-942.5475899420964
-Ibema,05/02/,Baixo risco climático,0.7748101236789068,Mais viável,3.8,-843.805493999949
-Iguatu,05/02/,Baixo risco climático,0.7520861418483235,Mais viável,3.8,-872.3551506310534
-Iracema do Oeste,05/02/,Baixo risco climático,0.7347737080776653,Viabilidade intermediária,7.7,-883.7483250019886
-Itaipulândia,25/03/,Baixo risco climático,0.6978257961538197,Menos viável,3.8,-955.206860427376
-Jesuítas,05/02/,Baixo risco climático,0.7367959649254892,Viabilidade intermediária,7.7,-884.0258708681779
-Lindoeste,25/03/,Baixo risco climático,0.7628880361993928,Mais viável,7.7,-862.7167493851586
-Marechal Cândido Rondon,25/03/,Baixo risco climático,0.6952316067111695,Menos viável,3.8,-956.9647317617715
-Maripá,05/02/,Baixo risco climático,0.7137829130995229,Viabilidade intermediária,7.7,-907.5948787099229
-Matelândia,25/03/,Baixo risco climático,0.7595208577917512,Mais viável,7.7,-867.7005549122267
-Medianeira,25/03/,Baixo risco climático,0.732883334046447,Viabilidade intermediária,7.7,-897.0886875133347
-Mercedes,25/03/,Baixo risco climático,0.6949196814823874,Menos viável,3.8,-960.107805250213
-Missal,25/03/,Baixo risco climático,0.6977633018150117,Menos viável,3.8,-957.1263179086899
-Nova Aurora,05/02/,Baixo risco climático,0.7383420498577367,Viabilidade intermediária,7.7,-881.902642674398
-Nova Santa Rosa,05/02/,Baixo risco climático,0.7139855439370277,Viabilidade intermediária,7.7,-907.7743811525652
-Ouro Verde do Oeste,05/03/,Baixo risco climático,0.7248568321415673,Mais viável,7.7,-855.045593819119
-Palotina,05/03/,Baixo risco climático,0.6918335368686812,Viabilidade intermediária,7.7,-908.6978595186938
-Pato Bragado,25/03/,Baixo risco climático,0.673269592188785,Menos viável,3.8,-954.5631183648887
-Quatro Pontes,05/02/,Baixo risco climático,0.7162465935721007,Viabilidade intermediária,7.7,-904.8890252973731
-Ramilândia,25/03/,Baixo risco climático,0.6972587929802398,Menos viável,3.8,-953.2446149313439
-Santa Helena,25/03/,Baixo risco climático,0.6947700192154924,Menos viável,3.8,-962.3596162698097
-Santa Lúcia,25/03/,Baixo risco climático,0.7624467070329765,Mais viável,7.7,-863.7747558806152
-Santa Tereza do Oeste,25/03/,Baixo risco climático,0.7350612753736546,Mais viável,7.7,-872.6547955466917
-Santa Terezinha de Itaipu,25/03/,Baixo risco climático,0.7203342171037883,Viabilidade intermediária,7.7,-904.581994920314
-Serranópolis do Iguaçu,25/03/,Baixo risco climático,0.756643710116724,Mais viável,7.7,-867.5608049284638
-São José das Palmeiras,25/03/,Baixo risco climático,0.713115635435136,Menos viável,3.8,-956.2675582800468
-São Miguel do Iguaçu,25/03/,Baixo risco climático,0.7241587957017254,Viabilidade intermediária,7.7,-909.9327254789462
-São Pedro do Iguaçu,15/03/,Baixo risco climático,0.7338109475267349,Mais viável,7.7,-873.6788332240756
-Terra Roxa,05/02/,Baixo risco climático,0.6710074490662042,Menos viável,7.7,-944.4431493236726
-Toledo,05/02/,Baixo risco climático,0.711456115918854,Viabilidade intermediária,7.7,-903.336949507564
-Três Barras do Paraná,05/02/,Baixo risco climático,0.7638841897538418,Mais viável,3.8,-871.3467532222578
-Tupãssi,05/02/,Baixo risco climático,0.7117754159987635,Viabilidade intermediária,7.7,-903.9934501541327
-Vera Cruz do Oeste,15/03/,Baixo risco climático,0.7356162165404437,Mais viável,7.7,-871.6585979615415
+Anahy,15/02/,Risco climático 30%,0.7357809111323024,Viabilidade intermediária,3.8,-885.6370173796408
+Assis Chateaubriand,15/02/,Risco climático 30%,0.7076627827713984,Menos viável,3.8,-938.787866203759
+Boa Vista da Aparecida,15/02/,Risco climático 30%,0.7472407744886106,Mais viável,3.8,-837.2989203989721
+Braganey,15/02/,Risco climático 30%,0.763423756721751,Mais viável,7.7,-839.2737892555587
+Cafelândia,15/02/,Risco climático 40%,0.7222215252492826,Viabilidade intermediária,3.8,-891.5558833422352
+Campo Bonito,15/02/,Risco climático 30%,0.7630902088812243,Mais viável,7.7,-837.7234184227698
+Capitão Leônidas Marques,25/02/,Risco climático 30%,0.7328525414600455,Mais viável,7.7,-851.1678208107589
+Cascavel,15/02/,Risco climático 30%,0.7584233851814239,Mais viável,7.7,-838.576524654693
+Catanduvas,15/02/,Risco climático 30%,0.7678353843316913,Mais viável,7.7,-830.0737390797332
+Corbélia,15/02/,Risco climático 30%,0.7336000929667233,Viabilidade intermediária,3.8,-884.2519279717633
+Céu Azul,25/02/,Risco climático 30%,0.7236931136665788,Mais viável,7.7,-857.1191595131282
+Diamante D'Oeste,25/03/,Inapto (risco > 40%),0.7122999577748649,Menos viável,3.8,-953.7102373506697
+Diamante do Sul,15/02/,Risco climático 30%,0.7733917255924263,Mais viável,3.8,-825.2527468401834
+Entre Rios do Oeste,15/02/,Risco climático 40%,0.6742949522972731,Menos viável,3.8,-968.7835965893053
+Formosa do Oeste,15/02/,Risco climático 30%,0.7205828513635459,Viabilidade intermediária,3.8,-901.062980730857
+Foz do Iguaçu,05/03/,Inapto (risco > 40%),0.6640004914891117,Mais viável,7.7,-864.4872985917622
+Guaraniaçu,15/02/,Risco climático 30%,0.7691029003139184,Mais viável,7.7,-830.5367662817193
+Guaíra,15/02/,Risco climático 40%,0.6794023554896452,Menos viável,3.8,-958.8914564633415
+Ibema,15/02/,Risco climático 30%,0.763993496390163,Mais viável,7.7,-833.6080408612144
+Iguatu,15/02/,Risco climático 30%,0.7387714699308018,Viabilidade intermediária,3.8,-882.4804610254536
+Iracema do Oeste,15/02/,Risco climático 30%,0.7203413058412965,Viabilidade intermediária,3.8,-898.3254474051254
+Itaipulândia,25/03/,Inapto (risco > 40%),0.6978257961538197,Menos viável,3.8,-955.2068604273762
+Jesuítas,15/02/,Risco climático 30%,0.7224205090062198,Viabilidade intermediária,3.8,-898.6129574743062
+Lindoeste,15/02/,Risco climático 30%,0.7425944183050469,Mais viável,7.7,-871.7847781796329
+Marechal Cândido Rondon,15/02/,Risco climático 40%,0.685796734504561,Menos viável,3.8,-964.3882682260587
+Maripá,15/02/,Risco climático 30%,0.7094359496225356,Menos viável,3.8,-937.5852000032842
+Matelândia,25/02/,Risco climático 30%,0.7337103562779154,Mais viável,7.7,-850.8287473716581
+Medianeira,25/02/,Risco climático 40%,0.6831994954505907,Viabilidade intermediária,7.7,-895.3474017537337
+Mercedes,15/02/,Risco climático 40%,0.685495188587388,Menos viável,3.8,-967.9193751822604
+Missal,25/03/,Inapto (risco > 40%),0.6977633018150117,Menos viável,3.8,-957.1263179086898
+Nova Aurora,15/02/,Risco climático 30%,0.7240306107696058,Viabilidade intermediária,3.8,-895.7005969422145
+Nova Santa Rosa,15/02/,Risco climático 30%,0.7096246155441404,Menos viável,3.8,-937.8054444543209
+Ouro Verde do Oeste,25/02/,Risco climático 30%,0.7176936290410298,Mais viável,7.7,-865.5195952091909
+Palotina,15/02/,Risco climático 30%,0.7078154158667481,Menos viável,3.8,-941.5645139707522
+Pato Bragado,25/03/,Inapto (risco > 40%),0.673269592188785,Menos viável,3.8,-954.5631183648887
+Quatro Pontes,15/02/,Risco climático 30%,0.7120983978237301,Menos viável,3.8,-932.6153400970081
+Ramilândia,25/03/,Inapto (risco > 40%),0.6972587929802398,Menos viável,3.8,-953.2446149313438
+Santa Helena,25/03/,Inapto (risco > 40%),0.6947700192154924,Menos viável,3.8,-962.3596162698097
+Santa Lúcia,15/02/,Risco climático 30%,0.7420738872101222,Mais viável,7.7,-873.9247707487258
+Santa Tereza do Oeste,25/02/,Risco climático 30%,0.71767175719789,Mais viável,7.7,-860.3558290951371
+Santa Terezinha de Itaipu,25/03/,Inapto (risco > 40%),0.7203342171037883,Viabilidade intermediária,7.7,-904.5819949203141
+Serranópolis do Iguaçu,25/02/,Risco climático 30%,0.7306288685363386,Mais viável,7.7,-852.4109773214259
+São José das Palmeiras,15/02/,Risco climático 40%,0.6761335423508418,Menos viável,3.8,-968.255066496217
+São Miguel do Iguaçu,25/02/,Risco climático 40%,0.675729527318358,Viabilidade intermediária,7.7,-906.9329586239166
+São Pedro do Iguaçu,25/02/,Risco climático 30%,0.7170564259323897,Mais viável,7.7,-864.2891025955086
+Terra Roxa,05/02/,Inapto (risco > 40%),0.6710074490662042,Menos viável,7.7,-944.4431493236724
+Toledo,15/02/,Risco climático 30%,0.7070027585536593,Menos viável,3.8,-930.472856157349
+Três Barras do Paraná,05/02/,Risco climático 30%,0.7638841897538418,Mais viável,3.8,-871.346753222258
+Tupãssi,15/02/,Risco climático 30%,0.7073771874560774,Menos viável,3.8,-931.8955720610122
+Vera Cruz do Oeste,25/02/,Risco climático 30%,0.7194589351419692,Mais viável,7.7,-861.9875014927477

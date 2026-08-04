@@ -1,301 +1,301 @@
 ﻿municipio,data_semeadura,n_anos,pct_anos_cobre_custo,margem_media_rs_ha,risco_economico
-Anahy,05/02/,26,50.0,26.75607675222374,Viabilidade intermediária
+Anahy,05/02/,26,50.0,26.756076752223827,Viabilidade intermediária
 Anahy,05/03/,26,46.2,29.912961772925865,Mais viável
-Anahy,15/02/,26,50.0,15.460087981589455,Viabilidade intermediária
-Anahy,15/03/,26,46.2,27.049046314409644,Viabilidade intermediária
-Anahy,25/02/,26,50.0,26.264306135371342,Viabilidade intermediária
-Anahy,25/03/,26,50.0,19.204808615172038,Viabilidade intermediária
-Assis Chateaubriand,05/02/,26,46.2,-7.652024229329002,Viabilidade intermediária
-Assis Chateaubriand,05/03/,26,46.2,-1.5863819335681735,Viabilidade intermediária
-Assis Chateaubriand,15/02/,26,46.2,-37.690760842528896,Menos viável
-Assis Chateaubriand,15/03/,26,46.2,-19.06160100029496,Menos viável
-Assis Chateaubriand,25/02/,26,46.2,-3.776051826885158,Viabilidade intermediária
-Assis Chateaubriand,25/03/,26,46.2,-10.000007007591089,Viabilidade intermediária
-Boa Vista da Aparecida,05/02/,26,50.0,27.79581377508924,Mais viável
-Boa Vista da Aparecida,05/03/,26,53.8,60.06856026948165,Mais viável
-Boa Vista da Aparecida,15/02/,26,50.0,63.798184962258,Mais viável
-Boa Vista da Aparecida,15/03/,26,50.0,54.952050587264765,Mais viável
-Boa Vista da Aparecida,25/02/,26,53.8,67.54638413922031,Mais viável
-Boa Vista da Aparecida,25/03/,26,50.0,53.0751410564015,Mais viável
-Braganey,05/02/,26,50.0,51.29635652275311,Mais viável
-Braganey,05/03/,26,50.0,63.801086308707276,Mais viável
-Braganey,15/02/,26,53.8,61.82331610567158,Mais viável
-Braganey,15/03/,26,50.0,57.76039607122937,Mais viável
-Braganey,25/02/,26,50.0,69.70234707495827,Mais viável
-Braganey,25/03/,26,50.0,51.313892878448,Mais viável
-Cafelândia,05/02/,26,50.0,21.827748695126484,Viabilidade intermediária
-Cafelândia,05/03/,26,50.0,32.677375537859845,Mais viável
-Cafelândia,15/02/,26,50.0,9.54122201899484,Viabilidade intermediária
-Cafelândia,15/03/,26,46.2,28.39884964613454,Mais viável
-Cafelândia,25/02/,26,50.0,27.73139231272755,Mais viável
+Anahy,15/02/,26,50.0,15.460087981589421,Viabilidade intermediária
+Anahy,15/03/,26,46.2,27.04904631440961,Viabilidade intermediária
+Anahy,25/02/,26,50.0,26.26430613537129,Viabilidade intermediária
+Anahy,25/03/,26,50.0,19.20480861517203,Viabilidade intermediária
+Assis Chateaubriand,05/02/,26,46.2,-7.652024229328967,Viabilidade intermediária
+Assis Chateaubriand,05/03/,26,46.2,-1.5863819335681386,Viabilidade intermediária
+Assis Chateaubriand,15/02/,26,46.2,-37.69076084252898,Menos viável
+Assis Chateaubriand,15/03/,26,46.2,-19.061601000294978,Menos viável
+Assis Chateaubriand,25/02/,26,46.2,-3.776051826885193,Viabilidade intermediária
+Assis Chateaubriand,25/03/,26,46.2,-10.00000700759102,Viabilidade intermediária
+Boa Vista da Aparecida,05/02/,26,50.0,27.79581377508923,Mais viável
+Boa Vista da Aparecida,05/03/,26,53.8,60.06856026948164,Mais viável
+Boa Vista da Aparecida,15/02/,26,50.0,63.798184962258034,Mais viável
+Boa Vista da Aparecida,15/03/,26,50.0,54.95205058726468,Mais viável
+Boa Vista da Aparecida,25/02/,26,53.8,67.54638413922041,Mais viável
+Boa Vista da Aparecida,25/03/,26,50.0,53.075141056401485,Mais viável
+Braganey,05/02/,26,50.0,51.296356522753214,Mais viável
+Braganey,05/03/,26,50.0,63.80108630870737,Mais viável
+Braganey,15/02/,26,53.8,61.82331610567165,Mais viável
+Braganey,15/03/,26,50.0,57.76039607122932,Mais viável
+Braganey,25/02/,26,50.0,69.70234707495821,Mais viável
+Braganey,25/03/,26,50.0,51.31389287844814,Mais viável
+Cafelândia,05/02/,26,50.0,21.82774869512643,Viabilidade intermediária
+Cafelândia,05/03/,26,50.0,32.677375537859795,Mais viável
+Cafelândia,15/02/,26,50.0,9.541222018994858,Viabilidade intermediária
+Cafelândia,15/03/,26,46.2,28.398849646134593,Mais viável
+Cafelândia,25/02/,26,50.0,27.7313923127275,Mais viável
 Cafelândia,25/03/,26,50.0,22.11191998460042,Viabilidade intermediária
-Campo Bonito,05/02/,26,50.0,52.68270284555524,Mais viável
-Campo Bonito,05/03/,26,50.0,66.03915237699584,Mais viável
-Campo Bonito,15/02/,26,53.8,63.37368693846027,Mais viável
-Campo Bonito,15/03/,26,50.0,61.162190306579184,Mais viável
+Campo Bonito,05/02/,26,50.0,52.682702845555276,Mais viável
+Campo Bonito,05/03/,26,50.0,66.03915237699604,Mais viável
+Campo Bonito,15/02/,26,53.8,63.37368693846034,Mais viável
+Campo Bonito,15/03/,26,50.0,61.16219030657913,Mais viável
 Campo Bonito,25/02/,26,50.0,71.67793439531928,Mais viável
-Campo Bonito,25/03/,26,50.0,55.12330440901073,Mais viável
-Capitão Leônidas Marques,05/02/,26,50.0,-8.372261521622809,Viabilidade intermediária
-Capitão Leônidas Marques,05/03/,26,50.0,40.00681928349755,Mais viável
-Capitão Leônidas Marques,15/02/,26,50.0,23.908845886638932,Viabilidade intermediária
-Capitão Leônidas Marques,15/03/,26,50.0,21.906875540594797,Viabilidade intermediária
-Capitão Leônidas Marques,25/02/,26,53.8,49.92928455047109,Mais viável
-Capitão Leônidas Marques,25/03/,26,50.0,34.90195428429529,Mais viável
-Cascavel,05/02/,26,53.8,49.52926060426061,Mais viável
+Campo Bonito,25/03/,26,50.0,55.12330440901069,Mais viável
+Capitão Leônidas Marques,05/02/,26,50.0,-8.372261521622757,Viabilidade intermediária
+Capitão Leônidas Marques,05/03/,26,50.0,40.00681928349744,Mais viável
+Capitão Leônidas Marques,15/02/,26,50.0,23.908845886638908,Viabilidade intermediária
+Capitão Leônidas Marques,15/03/,26,50.0,21.906875540594804,Viabilidade intermediária
+Capitão Leônidas Marques,25/02/,26,53.8,49.929284550471024,Mais viável
+Capitão Leônidas Marques,25/03/,26,50.0,34.90195428429535,Mais viável
+Cascavel,05/02/,26,53.8,49.529260604260486,Mais viável
 Cascavel,05/03/,26,53.8,67.36570672475234,Mais viável
-Cascavel,15/02/,26,53.8,62.52058070653689,Mais viável
-Cascavel,15/03/,26,50.0,66.7352277663236,Mais viável
-Cascavel,25/02/,26,50.0,75.55716441922314,Mais viável
-Cascavel,25/03/,26,53.8,64.59247202787722,Mais viável
-Catanduvas,05/02/,26,53.8,62.4471594051195,Mais viável
-Catanduvas,05/03/,26,53.8,72.55813030325353,Mais viável
-Catanduvas,15/02/,26,53.8,71.02336628149699,Mais viável
-Catanduvas,15/03/,26,50.0,68.13334029830864,Mais viável
-Catanduvas,25/02/,26,53.8,78.47820401437728,Mais viável
-Catanduvas,25/03/,26,53.8,62.96377724905957,Mais viável
+Cascavel,15/02/,26,53.8,62.520580706536904,Mais viável
+Cascavel,15/03/,26,50.0,66.73522776632359,Mais viável
+Cascavel,25/02/,26,50.0,75.55716441922317,Mais viável
+Cascavel,25/03/,26,53.8,64.59247202787705,Mais viável
+Catanduvas,05/02/,26,53.8,62.44715940511945,Mais viável
+Catanduvas,05/03/,26,53.8,72.55813030325349,Mais viável
+Catanduvas,15/02/,26,53.8,71.02336628149693,Mais viável
+Catanduvas,15/03/,26,50.0,68.13334029830844,Mais viável
+Catanduvas,25/02/,26,53.8,78.47820401437737,Mais viável
+Catanduvas,25/03/,26,53.8,62.96377724905953,Mais viável
 Corbélia,05/02/,26,50.0,27.60269074511479,Mais viável
-Corbélia,05/03/,26,50.0,33.630798752626454,Mais viável
-Corbélia,15/02/,26,50.0,16.845177389466734,Viabilidade intermediária
-Corbélia,15/03/,26,46.2,31.583963105343837,Mais viável
-Corbélia,25/02/,26,50.0,30.217080705644864,Mais viável
-Corbélia,25/03/,26,50.0,23.585220808026527,Viabilidade intermediária
-Céu Azul,05/02/,26,46.2,14.03818394787394,Viabilidade intermediária
-Céu Azul,05/03/,26,50.0,50.71772820289974,Mais viável
-Céu Azul,15/02/,26,50.0,16.77019276478133,Viabilidade intermediária
-Céu Azul,15/03/,26,46.2,33.52766941471312,Mais viável
-Céu Azul,25/02/,26,50.0,43.9779458481019,Mais viável
-Céu Azul,25/03/,26,46.2,26.817639993034547,Viabilidade intermediária
-Diamante D'Oeste,05/02/,26,46.2,-86.25776924927374,Menos viável
+Corbélia,05/03/,26,50.0,33.63079875262649,Mais viável
+Corbélia,15/02/,26,50.0,16.84517738946677,Viabilidade intermediária
+Corbélia,15/03/,26,46.2,31.583963105343873,Mais viável
+Corbélia,25/02/,26,50.0,30.217080705644882,Mais viável
+Corbélia,25/03/,26,50.0,23.585220808026424,Viabilidade intermediária
+Céu Azul,05/02/,26,46.2,14.038183947873991,Viabilidade intermediária
+Céu Azul,05/03/,26,50.0,50.71772820289969,Mais viável
+Céu Azul,15/02/,26,50.0,16.770192764781278,Viabilidade intermediária
+Céu Azul,15/03/,26,46.2,33.52766941471306,Mais viável
+Céu Azul,25/02/,26,50.0,43.97794584810201,Mais viável
+Céu Azul,25/03/,26,46.2,26.81763999303451,Viabilidade intermediária
+Diamante D'Oeste,05/02/,26,46.2,-86.25776924927376,Menos viável
 Diamante D'Oeste,05/03/,26,42.3,-49.76602848538797,Menos viável
-Diamante D'Oeste,15/02/,26,46.2,-66.53073813209153,Menos viável
-Diamante D'Oeste,15/03/,26,42.3,-81.83912844460734,Menos viável
-Diamante D'Oeste,25/02/,26,34.6,-57.85241710532596,Menos viável
-Diamante D'Oeste,25/03/,26,46.2,-52.61313198943931,Menos viável
-Diamante do Sul,05/02/,26,53.8,65.28366010976013,Mais viável
-Diamante do Sul,05/03/,26,53.8,69.86693855286236,Mais viável
-Diamante do Sul,15/02/,26,53.8,75.84435852104663,Mais viável
+Diamante D'Oeste,15/02/,26,46.2,-66.53073813209156,Menos viável
+Diamante D'Oeste,15/03/,26,42.3,-81.83912844460737,Menos viável
+Diamante D'Oeste,25/02/,26,34.6,-57.8524171053259,Menos viável
+Diamante D'Oeste,25/03/,26,46.2,-52.61313198943932,Menos viável
+Diamante do Sul,05/02/,26,53.8,65.28366010976015,Mais viável
+Diamante do Sul,05/03/,26,53.8,69.86693855286234,Mais viável
+Diamante do Sul,15/02/,26,53.8,75.84435852104664,Mais viável
 Diamante do Sul,15/03/,26,50.0,60.150936019348734,Mais viável
-Diamante do Sul,25/02/,26,50.0,71.3859629332855,Mais viável
-Diamante do Sul,25/03/,26,53.8,52.68138847217387,Mais viável
+Diamante do Sul,25/02/,26,50.0,71.38596293328554,Mais viável
+Diamante do Sul,25/03/,26,53.8,52.68138847217385,Mais viável
 Entre Rios do Oeste,05/02/,26,46.2,-74.72185392511503,Menos viável
-Entre Rios do Oeste,05/03/,26,46.2,-40.90036380176752,Menos viável
-Entre Rios do Oeste,15/02/,26,46.2,-67.68649122807533,Menos viável
+Entre Rios do Oeste,05/03/,26,46.2,-40.900363801767476,Menos viável
+Entre Rios do Oeste,15/02/,26,46.2,-67.68649122807535,Menos viável
 Entre Rios do Oeste,15/03/,26,42.3,-80.896061027643,Menos viável
-Entre Rios do Oeste,25/02/,26,46.2,-32.11815960758951,Menos viável
-Entre Rios do Oeste,25/03/,26,46.2,-54.11073209186759,Menos viável
-Formosa do Oeste,05/02/,26,46.2,15.37964384094728,Viabilidade intermediária
-Formosa do Oeste,05/03/,26,46.2,20.122132454868883,Viabilidade intermediária
-Formosa do Oeste,15/02/,26,46.2,0.03412463037318503,Viabilidade intermediária
-Formosa do Oeste,15/03/,26,46.2,15.976622649645956,Viabilidade intermediária
-Formosa do Oeste,25/02/,26,46.2,17.206332851098207,Viabilidade intermediária
-Formosa do Oeste,25/03/,26,46.2,10.586836225657967,Viabilidade intermediária
-Foz do Iguaçu,05/02/,26,50.0,-60.66924177414181,Menos viável
-Foz do Iguaçu,05/03/,26,50.0,36.60980676946793,Mais viável
+Entre Rios do Oeste,25/02/,26,46.2,-32.118159607589455,Menos viável
+Entre Rios do Oeste,25/03/,26,46.2,-54.1107320918676,Menos viável
+Formosa do Oeste,05/02/,26,46.2,15.379643840947228,Viabilidade intermediária
+Formosa do Oeste,05/03/,26,46.2,20.122132454868943,Viabilidade intermediária
+Formosa do Oeste,15/02/,26,46.2,0.03412463037312381,Viabilidade intermediária
+Formosa do Oeste,15/03/,26,46.2,15.976622649646078,Viabilidade intermediária
+Formosa do Oeste,25/02/,26,46.2,17.20633285109826,Viabilidade intermediária
+Formosa do Oeste,25/03/,26,46.2,10.586836225657915,Viabilidade intermediária
+Foz do Iguaçu,05/02/,26,50.0,-60.669241774141796,Menos viável
+Foz do Iguaçu,05/03/,26,50.0,36.609806769467994,Mais viável
 Foz do Iguaçu,15/02/,26,50.0,-7.483005220735357,Viabilidade intermediária
-Foz do Iguaçu,15/03/,26,46.2,8.25020725339872,Viabilidade intermediária
-Foz do Iguaçu,25/02/,26,50.0,37.64258222124381,Mais viável
-Foz do Iguaçu,25/03/,26,53.8,13.351538033786754,Viabilidade intermediária
-Guaraniaçu,05/02/,26,53.8,60.26172035546798,Mais viável
-Guaraniaçu,05/03/,26,50.0,69.11208455513,Mais viável
-Guaraniaçu,15/02/,26,53.8,70.56033907951107,Mais viável
-Guaraniaçu,15/03/,26,50.0,65.56198015638918,Mais viável
-Guaraniaçu,25/02/,26,50.0,75.34099745233661,Mais viável
-Guaraniaçu,25/03/,26,53.8,60.73995327615421,Mais viável
-Guaíra,05/02/,26,46.2,-41.450484580866146,Menos viável
-Guaíra,05/03/,26,42.3,-34.18644380699873,Menos viável
-Guaíra,15/02/,26,42.3,-57.79435110211128,Menos viável
-Guaíra,15/03/,26,42.3,-53.890359375240976,Menos viável
+Foz do Iguaçu,15/03/,26,46.2,8.250207253398703,Viabilidade intermediária
+Foz do Iguaçu,25/02/,26,50.0,37.642582221243806,Mais viável
+Foz do Iguaçu,25/03/,26,53.8,13.351538033786763,Viabilidade intermediária
+Guaraniaçu,05/02/,26,53.8,60.261720355468,Mais viável
+Guaraniaçu,05/03/,26,50.0,69.11208455513002,Mais viável
+Guaraniaçu,15/02/,26,53.8,70.56033907951108,Mais viável
+Guaraniaçu,15/03/,26,50.0,65.56198015638907,Mais viável
+Guaraniaçu,25/02/,26,50.0,75.34099745233662,Mais viável
+Guaraniaçu,25/03/,26,53.8,60.73995327615428,Mais viável
+Guaíra,05/02/,26,46.2,-41.45048458086615,Menos viável
+Guaíra,05/03/,26,42.3,-34.186443806998746,Menos viável
+Guaíra,15/02/,26,42.3,-57.794351102111285,Menos viável
+Guaíra,15/03/,26,42.3,-53.890359375240955,Menos viável
 Guaíra,25/02/,26,42.3,-34.55685081670852,Menos viável
-Guaíra,25/03/,26,42.3,-23.994120167013744,Menos viável
-Ibema,05/02/,26,53.8,57.29161136128117,Mais viável
-Ibema,05/03/,26,50.0,70.30517484494833,Mais viável
-Ibema,15/02/,26,53.8,67.48906450001606,Mais viável
+Guaíra,25/03/,26,42.3,-23.99412016701378,Menos viável
+Ibema,05/02/,26,53.8,57.29161136128115,Mais viável
+Ibema,05/03/,26,50.0,70.30517484494831,Mais viável
+Ibema,15/02/,26,53.8,67.48906450001603,Mais viável
 Ibema,15/03/,26,50.0,68.0843820022308,Mais viável
-Ibema,25/02/,26,53.8,77.84540979718776,Mais viável
-Ibema,25/03/,26,53.8,63.74080963948955,Mais viável
-Iguatu,05/02/,26,50.0,28.7419547301766,Mais viável
-Iguatu,05/03/,26,46.2,32.11331187023291,Mais viável
-Iguatu,15/02/,26,50.0,18.616644335776982,Viabilidade intermediária
-Iguatu,15/03/,26,46.2,29.20845947704017,Mais viável
-Iguatu,25/02/,26,50.0,27.841749579589933,Mais viável
-Iguatu,25/03/,26,50.0,20.40799405607775,Viabilidade intermediária
-Iracema do Oeste,05/02/,26,50.0,17.348780359241434,Viabilidade intermediária
-Iracema do Oeste,05/03/,26,46.2,24.628484767253422,Viabilidade intermediária
+Ibema,25/02/,26,53.8,77.84540979718783,Mais viável
+Ibema,25/03/,26,53.8,63.74080963948951,Mais viável
+Iguatu,05/02/,26,50.0,28.74195473017662,Mais viável
+Iguatu,05/03/,26,46.2,32.11331187023297,Mais viável
+Iguatu,15/02/,26,50.0,18.616644335776826,Viabilidade intermediária
+Iguatu,15/03/,26,46.2,29.208459477040222,Mais viável
+Iguatu,25/02/,26,50.0,27.841749579589916,Mais viável
+Iguatu,25/03/,26,50.0,20.40799405607768,Viabilidade intermediária
+Iracema do Oeste,05/02/,26,50.0,17.348780359241502,Viabilidade intermediária
+Iracema do Oeste,05/03/,26,46.2,24.628484767253475,Viabilidade intermediária
 Iracema do Oeste,15/02/,26,50.0,2.7716579561047183,Viabilidade intermediária
-Iracema do Oeste,15/03/,26,46.2,19.93100279180599,Viabilidade intermediária
+Iracema do Oeste,15/03/,26,46.2,19.931002791806016,Viabilidade intermediária
 Iracema do Oeste,25/02/,26,46.2,20.262423685852898,Viabilidade intermediária
-Iracema do Oeste,25/03/,26,46.2,14.53401338231286,Viabilidade intermediária
-Itaipulândia,05/02/,26,46.2,-91.44436737101455,Menos viável
-Itaipulândia,05/03/,26,42.3,-48.87606478436755,Menos viável
-Itaipulândia,15/02/,26,42.3,-71.85487940580722,Menos viável
-Itaipulândia,15/03/,26,42.3,-80.81973194267412,Menos viável
-Itaipulândia,25/02/,26,38.5,-56.08272472190609,Menos viável
+Iracema do Oeste,25/03/,26,46.2,14.534013382312896,Viabilidade intermediária
+Itaipulândia,05/02/,26,46.2,-91.44436737101458,Menos viável
+Itaipulândia,05/03/,26,42.3,-48.87606478436753,Menos viável
+Itaipulândia,15/02/,26,42.3,-71.85487940580721,Menos viável
+Itaipulândia,15/03/,26,42.3,-80.81973194267415,Menos viável
+Itaipulândia,25/02/,26,38.5,-56.08272472190605,Menos viável
 Itaipulândia,25/03/,26,46.2,-54.109755066146015,Menos viável
-Jesuítas,05/02/,26,50.0,17.071234493052227,Viabilidade intermediária
-Jesuítas,05/03/,26,46.2,24.00778534937929,Viabilidade intermediária
-Jesuítas,15/02/,26,50.0,2.48414788692391,Viabilidade intermediária
-Jesuítas,15/03/,26,46.2,20.042991561218376,Viabilidade intermediária
+Jesuítas,05/02/,26,50.0,17.07123449305221,Viabilidade intermediária
+Jesuítas,05/03/,26,46.2,24.007785349379308,Viabilidade intermediária
+Jesuítas,15/02/,26,50.0,2.484147886923963,Viabilidade intermediária
+Jesuítas,15/03/,26,46.2,20.042991561218322,Viabilidade intermediária
 Jesuítas,25/02/,26,46.2,19.806661950329097,Viabilidade intermediária
-Jesuítas,25/03/,26,46.2,14.270040958363403,Viabilidade intermediária
-Lindoeste,05/02/,26,46.2,-4.258560204500475,Viabilidade intermediária
-Lindoeste,05/03/,26,50.0,44.14787195074692,Mais viável
-Lindoeste,15/02/,26,50.0,29.312327181597137,Mais viável
-Lindoeste,15/03/,26,46.2,26.31185222136427,Viabilidade intermediária
-Lindoeste,25/02/,26,50.0,51.98359815779166,Mais viável
-Lindoeste,25/03/,26,50.0,38.38035597607173,Mais viável
-Marechal Cândido Rondon,05/02/,26,46.2,-71.53976629383072,Menos viável
-Marechal Cândido Rondon,05/03/,26,46.2,-44.60343658773584,Menos viável
-Marechal Cândido Rondon,15/02/,26,46.2,-63.29116286482867,Menos viável
-Marechal Cândido Rondon,15/03/,26,42.3,-83.2285541758108,Menos viável
-Marechal Cândido Rondon,25/02/,26,46.2,-29.65379745435766,Menos viável
-Marechal Cândido Rondon,25/03/,26,46.2,-55.86762640054158,Menos viável
-Maripá,05/02/,26,46.2,-6.497773348692677,Viabilidade intermediária
-Maripá,05/03/,26,46.2,-0.6109324673158111,Viabilidade intermediária
-Maripá,15/02/,26,46.2,-36.48809464205388,Menos viável
-Maripá,15/03/,26,46.2,-18.743905481065966,Menos viável
-Maripá,25/02/,26,46.2,-3.4367966598553212,Viabilidade intermediária
-Maripá,25/03/,26,46.2,-10.21814544801651,Menos viável
-Matelândia,05/02/,26,50.0,-6.543686967289991,Viabilidade intermediária
-Matelândia,05/03/,26,50.0,40.14529011691793,Mais viável
-Matelândia,15/02/,26,50.0,25.092442617007684,Viabilidade intermediária
-Matelândia,15/03/,26,50.0,21.366529400212812,Viabilidade intermediária
+Jesuítas,25/03/,26,46.2,14.27004095836343,Viabilidade intermediária
+Lindoeste,05/02/,26,46.2,-4.258560204500432,Viabilidade intermediária
+Lindoeste,05/03/,26,50.0,44.147871950746726,Mais viável
+Lindoeste,15/02/,26,50.0,29.31232718159712,Mais viável
+Lindoeste,15/03/,26,46.2,26.311852221364305,Viabilidade intermediária
+Lindoeste,25/02/,26,50.0,51.983598157791675,Mais viável
+Lindoeste,25/03/,26,50.0,38.3803559760717,Mais viável
+Marechal Cândido Rondon,05/02/,26,46.2,-71.53976629383068,Menos viável
+Marechal Cândido Rondon,05/03/,26,46.2,-44.6034365877359,Menos viável
+Marechal Cândido Rondon,15/02/,26,46.2,-63.291162864828706,Menos viável
+Marechal Cândido Rondon,15/03/,26,42.3,-83.22855417581074,Menos viável
+Marechal Cândido Rondon,25/02/,26,46.2,-29.65379745435761,Menos viável
+Marechal Cândido Rondon,25/03/,26,46.2,-55.867626400541525,Menos viável
+Maripá,05/02/,26,46.2,-6.49777334869273,Viabilidade intermediária
+Maripá,05/03/,26,46.2,-0.6109324673157237,Viabilidade intermediária
+Maripá,15/02/,26,46.2,-36.488094642053845,Menos viável
+Maripá,15/03/,26,46.2,-18.743905481065948,Menos viável
+Maripá,25/02/,26,46.2,-3.436796659855365,Viabilidade intermediária
+Maripá,25/03/,26,46.2,-10.218145448016493,Menos viável
+Matelândia,05/02/,26,50.0,-6.543686967290027,Viabilidade intermediária
+Matelândia,05/03/,26,50.0,40.14529011691798,Mais viável
+Matelândia,15/02/,26,50.0,25.092442617007638,Viabilidade intermediária
+Matelândia,15/03/,26,50.0,21.36652940021292,Viabilidade intermediária
 Matelândia,25/02/,26,53.8,50.26835798957221,Mais viável
 Matelândia,25/03/,26,50.0,33.3965504490033,Mais viável
-Medianeira,05/02/,26,46.2,-50.22838066599717,Menos viável
-Medianeira,05/03/,26,50.0,15.268476165568892,Viabilidade intermediária
+Medianeira,05/02/,26,46.2,-50.228380665997186,Menos viável
+Medianeira,05/03/,26,50.0,15.268476165568858,Viabilidade intermediária
 Medianeira,15/02/,26,46.2,-13.593023820268801,Menos viável
-Medianeira,15/03/,26,42.3,-16.809825234350193,Menos viável
-Medianeira,25/02/,26,42.3,5.749703607496285,Viabilidade intermediária
-Medianeira,25/03/,26,53.8,4.00841784789571,Viabilidade intermediária
-Mercedes,05/02/,26,46.2,-73.84981778920871,Menos viável
-Mercedes,05/03/,26,46.2,-49.5853287094092,Menos viável
+Medianeira,15/03/,26,42.3,-16.809825234350246,Menos viável
+Medianeira,25/02/,26,42.3,5.749703607496171,Viabilidade intermediária
+Medianeira,25/03/,26,53.8,4.008417847895719,Viabilidade intermediária
+Mercedes,05/02/,26,46.2,-73.84981778920874,Menos viável
+Mercedes,05/03/,26,46.2,-49.585328709409254,Menos viável
 Mercedes,15/02/,26,46.2,-66.82226982103037,Menos viável
 Mercedes,15/03/,26,42.3,-87.52015001047799,Menos viável
-Mercedes,25/02/,26,46.2,-36.0275867075716,Menos viável
-Mercedes,25/03/,26,46.2,-59.010699888982806,Menos viável
-Missal,05/02/,26,46.2,-90.38331930335431,Menos viável
+Mercedes,25/02/,26,46.2,-36.02758670757156,Menos viável
+Mercedes,25/03/,26,46.2,-59.01069988898281,Menos viável
+Missal,05/02/,26,46.2,-90.38331930335428,Menos viável
 Missal,05/03/,26,42.3,-52.09166961528836,Menos viável
-Missal,15/02/,26,42.3,-73.23809785765604,Menos viável
-Missal,15/03/,26,42.3,-83.83454358858731,Menos viável
-Missal,25/02/,26,38.5,-58.69378107551164,Menos viável
-Missal,25/03/,26,46.2,-56.02921254745964,Menos viável
-Nova Aurora,05/02/,26,50.0,19.194462686832086,Viabilidade intermediária
+Missal,15/02/,26,42.3,-73.2380978576561,Menos viável
+Missal,15/03/,26,42.3,-83.8345435885874,Menos viável
+Missal,25/02/,26,38.5,-58.693781075511666,Menos viável
+Missal,25/03/,26,46.2,-56.02921254745971,Menos viável
+Nova Aurora,05/02/,26,50.0,19.194462686832157,Viabilidade intermediária
 Nova Aurora,05/03/,26,46.2,26.164318041611295,Viabilidade intermediária
-Nova Aurora,15/02/,26,50.0,5.39650841901567,Viabilidade intermediária
-Nova Aurora,15/03/,26,46.2,22.83196101413313,Viabilidade intermediária
-Nova Aurora,25/02/,26,46.2,21.748743447814395,Viabilidade intermediária
-Nova Aurora,25/03/,26,50.0,16.490802456108675,Viabilidade intermediária
+Nova Aurora,15/02/,26,50.0,5.396508419015652,Viabilidade intermediária
+Nova Aurora,15/03/,26,46.2,22.831961014133114,Viabilidade intermediária
+Nova Aurora,25/02/,26,46.2,21.748743447814306,Viabilidade intermediária
+Nova Aurora,25/03/,26,50.0,16.490802456108614,Viabilidade intermediária
 Nova Santa Rosa,05/02/,26,46.2,-6.6772757913351,Viabilidade intermediária
-Nova Santa Rosa,05/03/,26,46.2,-1.5524297705379608,Viabilidade intermediária
-Nova Santa Rosa,15/02/,26,46.2,-36.70833909309071,Menos viável
-Nova Santa Rosa,15/03/,26,46.2,-18.67939877401288,Menos viável
-Nova Santa Rosa,25/02/,26,46.2,-4.81924038781274,Viabilidade intermediária
-Nova Santa Rosa,25/03/,26,46.2,-10.099683234421317,Viabilidade intermediária
-Ouro Verde do Oeste,05/02/,26,46.2,4.801293908821628,Viabilidade intermediária
-Ouro Verde do Oeste,05/03/,26,46.2,46.051511542111434,Mais viável
-Ouro Verde do Oeste,15/02/,26,46.2,9.440075358759923,Viabilidade intermediária
-Ouro Verde do Oeste,15/03/,26,46.2,26.12770451426354,Viabilidade intermediária
-Ouro Verde do Oeste,25/02/,26,50.0,35.57751015203894,Mais viável
-Ouro Verde do Oeste,25/03/,26,46.2,17.092572172813508,Viabilidade intermediária
-Palotina,05/02/,26,46.2,-10.104276632451693,Menos viável
-Palotina,05/03/,26,46.2,-7.600754157463764,Viabilidade intermediária
-Palotina,15/02/,26,46.2,-40.467408609522025,Menos viável
-Palotina,15/03/,26,46.2,-23.495239467341896,Menos viável
-Palotina,25/02/,26,46.2,-8.17747062918154,Viabilidade intermediária
-Palotina,25/03/,26,46.2,-14.970359183484561,Menos viável
-Pato Bragado,05/02/,26,46.2,-75.97160256312549,Menos viável
-Pato Bragado,05/03/,26,46.2,-39.48015990057287,Menos viável
-Pato Bragado,15/02/,26,46.2,-68.90027018830425,Menos viável
-Pato Bragado,15/03/,26,42.3,-78.46633656056437,Menos viável
-Pato Bragado,25/02/,26,46.2,-32.200690840696865,Menos viável
-Pato Bragado,25/03/,26,46.2,-53.46601300365872,Menos viável
-Quatro Pontes,05/02/,26,46.2,-3.791919936142764,Viabilidade intermediária
+Nova Santa Rosa,05/03/,26,46.2,-1.5524297705380132,Viabilidade intermediária
+Nova Santa Rosa,15/02/,26,46.2,-36.70833909309072,Menos viável
+Nova Santa Rosa,15/03/,26,46.2,-18.6793987740129,Menos viável
+Nova Santa Rosa,25/02/,26,46.2,-4.819240387812757,Viabilidade intermediária
+Nova Santa Rosa,25/03/,26,46.2,-10.099683234421281,Viabilidade intermediária
+Ouro Verde do Oeste,05/02/,26,46.2,4.801293908821645,Viabilidade intermediária
+Ouro Verde do Oeste,05/03/,26,46.2,46.0515115421115,Mais viável
+Ouro Verde do Oeste,15/02/,26,46.2,9.440075358759941,Viabilidade intermediária
+Ouro Verde do Oeste,15/03/,26,46.2,26.12770451426363,Viabilidade intermediária
+Ouro Verde do Oeste,25/02/,26,50.0,35.57751015203899,Mais viável
+Ouro Verde do Oeste,25/03/,26,46.2,17.09257217281335,Viabilidade intermediária
+Palotina,05/02/,26,46.2,-10.104276632451711,Menos viável
+Palotina,05/03/,26,46.2,-7.600754157463773,Viabilidade intermediária
+Palotina,15/02/,26,46.2,-40.46740860952206,Menos viável
+Palotina,15/03/,26,46.2,-23.49523946734189,Menos viável
+Palotina,25/02/,26,46.2,-8.177470629181576,Viabilidade intermediária
+Palotina,25/03/,26,46.2,-14.970359183484614,Menos viável
+Pato Bragado,05/02/,26,46.2,-75.97160256312547,Menos viável
+Pato Bragado,05/03/,26,46.2,-39.4801599005729,Menos viável
+Pato Bragado,15/02/,26,46.2,-68.90027018830428,Menos viável
+Pato Bragado,15/03/,26,42.3,-78.4663365605643,Menos viável
+Pato Bragado,25/02/,26,46.2,-32.20069084069696,Menos viável
+Pato Bragado,25/03/,26,46.2,-53.466013003658716,Menos viável
+Quatro Pontes,05/02/,26,46.2,-3.7919199361427287,Viabilidade intermediária
 Quatro Pontes,05/03/,26,46.2,5.1930691392075845,Viabilidade intermediária
-Quatro Pontes,15/02/,26,46.2,-31.51823473577796,Menos viável
-Quatro Pontes,15/03/,26,46.2,-13.160236720670301,Menos viável
-Quatro Pontes,25/02/,26,46.2,-1.040753466231352,Viabilidade intermediária
-Quatro Pontes,25/03/,26,46.2,-6.484504993182852,Viabilidade intermediária
-Ramilândia,05/02/,26,46.2,-85.47762621882757,Menos viável
-Ramilândia,05/03/,26,42.3,-47.36645836541173,Menos viável
-Ramilândia,15/02/,26,42.3,-69.00091386848554,Menos viável
-Ramilândia,15/03/,26,42.3,-77.36353481222201,Menos viável
-Ramilândia,25/02/,26,38.5,-54.20640325872364,Menos viável
-Ramilândia,25/03/,26,46.2,-52.14750957011376,Menos viável
+Quatro Pontes,15/02/,26,46.2,-31.518234735777995,Menos viável
+Quatro Pontes,15/03/,26,46.2,-13.160236720670232,Menos viável
+Quatro Pontes,25/02/,26,46.2,-1.0407534662314306,Viabilidade intermediária
+Quatro Pontes,25/03/,26,46.2,-6.484504993182886,Viabilidade intermediária
+Ramilândia,05/02/,26,46.2,-85.47762621882754,Menos viável
+Ramilândia,05/03/,26,42.3,-47.36645836541176,Menos viável
+Ramilândia,15/02/,26,42.3,-69.00091386848557,Menos viável
+Ramilândia,15/03/,26,42.3,-77.36353481222204,Menos viável
+Ramilândia,25/02/,26,38.5,-54.20640325872369,Menos viável
+Ramilândia,25/03/,26,46.2,-52.14750957011378,Menos viável
 Santa Helena,05/02/,26,46.2,-96.4126460636319,Menos viável
-Santa Helena,05/03/,26,42.3,-57.44114236985269,Menos viável
-Santa Helena,15/02/,26,38.5,-77.85354421776205,Menos viável
+Santa Helena,05/03/,26,42.3,-57.44114236985267,Menos viável
+Santa Helena,15/02/,26,38.5,-77.85354421776209,Menos viável
 Santa Helena,15/03/,26,42.3,-89.86813196685634,Menos viável
-Santa Helena,25/02/,26,38.5,-66.59063594929893,Menos viável
-Santa Helena,25/03/,26,46.2,-61.26251090857957,Menos viável
-Santa Lúcia,05/02/,26,50.0,-6.1830938151447645,Viabilidade intermediária
-Santa Lúcia,05/03/,26,50.0,42.58302708502442,Mais viável
-Santa Lúcia,15/02/,26,50.0,27.172334612504194,Mais viável
-Santa Lúcia,15/03/,26,50.0,24.766403687948074,Viabilidade intermediária
-Santa Lúcia,25/02/,26,50.0,51.29290159615976,Mais viável
-Santa Lúcia,25/03/,26,50.0,37.32234948061504,Mais viável
-Santa Tereza do Oeste,05/02/,26,46.2,7.397878579034166,Viabilidade intermediária
+Santa Helena,25/02/,26,38.5,-66.59063594929891,Menos viável
+Santa Helena,25/03/,26,46.2,-61.26251090857965,Menos viável
+Santa Lúcia,05/02/,26,50.0,-6.183093815144817,Viabilidade intermediária
+Santa Lúcia,05/03/,26,50.0,42.58302708502438,Mais viável
+Santa Lúcia,15/02/,26,50.0,27.17233461250418,Mais viável
+Santa Lúcia,15/03/,26,50.0,24.766403687948085,Viabilidade intermediária
+Santa Lúcia,25/02/,26,50.0,51.29290159615985,Mais viável
+Santa Lúcia,25/03/,26,50.0,37.322349480615,Mais viável
+Santa Tereza do Oeste,05/02/,26,46.2,7.3978785790342005,Viabilidade intermediária
 Santa Tereza do Oeste,05/03/,26,50.0,49.94231105741729,Mais viável
-Santa Tereza do Oeste,15/02/,26,50.0,12.19955732037425,Viabilidade intermediária
-Santa Tereza do Oeste,15/03/,26,46.2,32.8851860868853,Mais viável
-Santa Tereza do Oeste,25/02/,26,50.0,40.741276266093266,Mais viável
-Santa Tereza do Oeste,25/03/,26,46.2,28.4423098145383,Mais viável
-Santa Terezinha de Itaipu,05/02/,26,50.0,-61.822472278187625,Menos viável
-Santa Terezinha de Itaipu,05/03/,26,50.0,13.379625083617874,Viabilidade intermediária
-Santa Terezinha de Itaipu,15/02/,26,50.0,-19.81959796762817,Menos viável
-Santa Terezinha de Itaipu,15/03/,26,46.2,-22.54559838355373,Menos viável
+Santa Tereza do Oeste,15/02/,26,50.0,12.199557320374302,Viabilidade intermediária
+Santa Tereza do Oeste,15/03/,26,46.2,32.88518608688526,Mais viável
+Santa Tereza do Oeste,25/02/,26,50.0,40.7412762660933,Mais viável
+Santa Tereza do Oeste,25/03/,26,46.2,28.442309814538213,Mais viável
+Santa Terezinha de Itaipu,05/02/,26,50.0,-61.82247227818765,Menos viável
+Santa Terezinha de Itaipu,05/03/,26,50.0,13.379625083617908,Viabilidade intermediária
+Santa Terezinha de Itaipu,15/02/,26,50.0,-19.819597967628134,Menos viável
+Santa Terezinha de Itaipu,15/03/,26,46.2,-22.545598383553763,Menos viável
 Santa Terezinha de Itaipu,25/02/,26,50.0,8.16409731236861,Viabilidade intermediária
-Santa Terezinha de Itaipu,25/03/,26,53.8,-3.4848895590836264,Viabilidade intermediária
-Serranópolis do Iguaçu,05/02/,26,50.0,-10.154523642022214,Menos viável
-Serranópolis do Iguaçu,05/03/,26,50.0,37.16397345874949,Mais viável
-Serranópolis do Iguaçu,15/02/,26,50.0,23.235375426580145,Viabilidade intermediária
-Serranópolis do Iguaçu,15/03/,26,50.0,18.49994845540218,Viabilidade intermediária
+Santa Terezinha de Itaipu,25/03/,26,53.8,-3.4848895590836526,Viabilidade intermediária
+Serranópolis do Iguaçu,05/02/,26,50.0,-10.154523642022223,Menos viável
+Serranópolis do Iguaçu,05/03/,26,50.0,37.16397345874961,Mais viável
+Serranópolis do Iguaçu,15/02/,26,50.0,23.23537542658012,Viabilidade intermediária
+Serranópolis do Iguaçu,15/03/,26,50.0,18.499948455402144,Viabilidade intermediária
 Serranópolis do Iguaçu,25/02/,26,53.8,48.68612803980428,Mais viável
-Serranópolis do Iguaçu,25/03/,26,50.0,33.536300432766126,Mais viável
-São José das Palmeiras,05/02/,26,46.2,-86.87052643521704,Menos viável
-São José das Palmeiras,05/03/,26,42.3,-51.64886386170395,Menos viável
+Serranópolis do Iguaçu,25/03/,26,50.0,33.53630043276603,Mais viável
+São José das Palmeiras,05/02/,26,46.2,-86.87052643521707,Menos viável
+São José das Palmeiras,05/03/,26,42.3,-51.64886386170397,Menos viável
 São José das Palmeiras,15/02/,26,46.2,-67.15796113498678,Menos viável
-São José das Palmeiras,15/03/,26,42.3,-83.91994213677705,Menos viável
-São José das Palmeiras,25/02/,26,38.5,-59.67620411118589,Menos viável
-São José das Palmeiras,25/03/,26,46.2,-55.17045291881662,Menos viável
-São Miguel do Iguaçu,05/02/,26,50.0,-63.79355528190899,Menos viável
-São Miguel do Iguaçu,05/03/,26,50.0,4.024714947567156,Viabilidade intermediária
-São Miguel do Iguaçu,15/02/,26,50.0,-25.317839150816397,Menos viável
-São Miguel do Iguaçu,15/03/,26,46.2,-34.942805500888625,Menos viável
-São Miguel do Iguaçu,25/02/,26,46.2,-5.835853262686494,Viabilidade intermediária
-São Miguel do Iguaçu,25/03/,26,53.8,-8.83562011771612,Viabilidade intermediária
-São Pedro do Iguaçu,05/02/,26,46.2,5.715185867676714,Viabilidade intermediária
-São Pedro do Iguaçu,05/03/,26,46.2,47.191844792445494,Mais viável
-São Pedro do Iguaçu,15/02/,26,46.2,10.692358432710412,Viabilidade intermediária
-São Pedro do Iguaçu,15/03/,26,46.2,27.418272137154435,Mais viável
-São Pedro do Iguaçu,25/02/,26,50.0,36.8080027657213,Mais viável
-São Pedro do Iguaçu,25/03/,26,46.2,18.749934291258707,Viabilidade intermediária
-Terra Roxa,05/02/,26,46.2,-43.34604396244243,Menos viável
-Terra Roxa,05/03/,26,42.3,-31.78921299981609,Menos viável
-Terra Roxa,15/02/,26,42.3,-52.691331589011284,Menos viável
-Terra Roxa,15/03/,26,42.3,-49.81914783950118,Menos viável
+São José das Palmeiras,15/03/,26,42.3,-83.91994213677701,Menos viável
+São José das Palmeiras,25/02/,26,38.5,-59.67620411118581,Menos viável
+São José das Palmeiras,25/03/,26,46.2,-55.170452918816565,Menos viável
+São Miguel do Iguaçu,05/02/,26,50.0,-63.793555281908944,Menos viável
+São Miguel do Iguaçu,05/03/,26,50.0,4.024714947567068,Viabilidade intermediária
+São Miguel do Iguaçu,15/02/,26,50.0,-25.31783915081636,Menos viável
+São Miguel do Iguaçu,15/03/,26,46.2,-34.94280550088862,Menos viável
+São Miguel do Iguaçu,25/02/,26,46.2,-5.835853262686476,Viabilidade intermediária
+São Miguel do Iguaçu,25/03/,26,53.8,-8.835620117716067,Viabilidade intermediária
+São Pedro do Iguaçu,05/02/,26,46.2,5.715185867676732,Viabilidade intermediária
+São Pedro do Iguaçu,05/03/,26,46.2,47.19184479244536,Mais viável
+São Pedro do Iguaçu,15/02/,26,46.2,10.692358432710465,Viabilidade intermediária
+São Pedro do Iguaçu,15/03/,26,46.2,27.418272137154453,Mais viável
+São Pedro do Iguaçu,25/02/,26,50.0,36.80800276572131,Mais viável
+São Pedro do Iguaçu,25/03/,26,46.2,18.749934291258725,Viabilidade intermediária
+Terra Roxa,05/02/,26,46.2,-43.34604396244238,Menos viável
+Terra Roxa,05/03/,26,42.3,-31.789212999816126,Menos viável
+Terra Roxa,15/02/,26,42.3,-52.69133158901127,Menos viável
+Terra Roxa,15/03/,26,42.3,-49.81914783950114,Menos viável
 Terra Roxa,25/02/,26,42.3,-27.82053447380501,Menos viável
-Terra Roxa,25/03/,26,42.3,-23.899346722887362,Menos viável
-Toledo,05/02/,26,46.2,-2.2398441463336756,Viabilidade intermediária
+Terra Roxa,25/03/,26,42.3,-23.899346722887422,Menos viável
+Toledo,05/02/,26,46.2,-2.2398441463336405,Viabilidade intermediária
 Toledo,05/03/,26,46.2,9.805496476694456,Viabilidade intermediária
-Toledo,15/02/,26,46.2,-29.375750796118766,Menos viável
-Toledo,15/03/,26,46.2,-11.798041086985064,Menos viável
-Toledo,25/02/,26,46.2,5.097020332317356,Viabilidade intermediária
+Toledo,15/02/,26,46.2,-29.375750796118783,Menos viável
+Toledo,15/03/,26,46.2,-11.798041086985082,Menos viável
+Toledo,25/02/,26,46.2,5.097020332317383,Viabilidade intermediária
 Toledo,25/03/,26,46.2,-4.064372974540133,Viabilidade intermediária
-Três Barras do Paraná,05/02/,26,50.0,29.75035213897249,Mais viável
-Três Barras do Paraná,05/03/,26,53.8,61.897105897346314,Mais viável
-Três Barras do Paraná,15/02/,26,50.0,63.48887743714319,Mais viável
+Três Barras do Paraná,05/02/,26,50.0,29.75035213897242,Mais viável
+Três Barras do Paraná,05/03/,26,53.8,61.89710589734633,Mais viável
+Três Barras do Paraná,15/02/,26,50.0,63.48887743714321,Mais viável
 Três Barras do Paraná,15/03/,26,50.0,54.43572367507374,Mais viável
-Três Barras do Paraná,25/02/,26,53.8,66.64356761506073,Mais viável
-Três Barras do Paraná,25/03/,26,50.0,52.75175184247434,Mais viável
-Tupãssi,05/02/,26,46.2,-2.8963447929024997,Viabilidade intermediária
+Três Barras do Paraná,25/02/,26,53.8,66.64356761506075,Mais viável
+Três Barras do Paraná,25/03/,26,50.0,52.75175184247431,Mais viável
+Tupãssi,05/02/,26,46.2,-2.8963447929025175,Viabilidade intermediária
 Tupãssi,05/03/,26,46.2,8.14670639311117,Viabilidade intermediária
-Tupãssi,15/02/,26,46.2,-30.7984666997821,Menos viável
-Tupãssi,15/03/,26,46.2,-11.936197939227371,Menos viável
-Tupãssi,25/02/,26,46.2,3.5036010089431957,Viabilidade intermediária
-Tupãssi,25/03/,26,46.2,-3.2772328507516635,Viabilidade intermediária
-Vera Cruz do Oeste,05/02/,26,46.2,6.953752891116735,Viabilidade intermediária
-Vera Cruz do Oeste,05/03/,26,46.2,47.16078926160963,Mais viável
-Vera Cruz do Oeste,15/02/,26,50.0,10.841361604450954,Viabilidade intermediária
-Vera Cruz do Oeste,15/03/,26,46.2,29.438507399688767,Mais viável
-Vera Cruz do Oeste,25/02/,26,50.0,39.109603868482665,Mais viável
-Vera Cruz do Oeste,25/03/,26,46.2,24.254478630400836,Viabilidade intermediária
+Tupãssi,15/02/,26,46.2,-30.798466699782118,Menos viável
+Tupãssi,15/03/,26,46.2,-11.936197939227387,Menos viável
+Tupãssi,25/02/,26,46.2,3.5036010089431433,Viabilidade intermediária
+Tupãssi,25/03/,26,46.2,-3.277232850751681,Viabilidade intermediária
+Vera Cruz do Oeste,05/02/,26,46.2,6.953752891116752,Viabilidade intermediária
+Vera Cruz do Oeste,05/03/,26,46.2,47.160789261609544,Mais viável
+Vera Cruz do Oeste,15/02/,26,50.0,10.841361604450972,Viabilidade intermediária
+Vera Cruz do Oeste,15/03/,26,46.2,29.43850739968878,Mais viável
+Vera Cruz do Oeste,25/02/,26,50.0,39.10960386848265,Mais viável
+Vera Cruz do Oeste,25/03/,26,46.2,24.254478630400765,Viabilidade intermediária

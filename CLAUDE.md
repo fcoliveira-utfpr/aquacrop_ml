@@ -177,6 +177,31 @@ antes de `07_analise_custos_milho_pr.ipynb`, na ordem.
 
 - **`08_precos.ipynb`** — série de preços do milho (IPEA/SEAB-Deral), usada como receita de
   referência no eixo econômico.
+- **`09_analise_custo_modelos.ipynb`, seção 5** — risco climático via **ISNA** (Índice de
+  Satisfação da Necessidade de Água, `ETR/ETc`), seguindo o critério oficial de **déficit hídrico**
+  do Zoneamento Agrícola de Risco Climático (ZARC), conforme a **Portaria SPA/MAPA nº 329, de
+  28/07/2026** (milho 2ª safra, Paraná, safra 2026/2027, item 1.14, critério "a"):
+  [PDF oficial](https://www.gov.br/agricultura/pt-br/assuntos/riscos-seguro/programa-nacional-de-zoneamento-agricola-de-risco-climatico/portarias/safra-vigente/parana/PO5FD71.PDF).
+  `simular_safra` calcula o ISNA sobre as **fases próprias do ZARC** (Grupo I, ciclo 90-110 dias,
+  item 1.12: Fase I = dias 1-20, Fase III = dias 51-80) — diferentes das fases Doorenbos-Kassam
+  (F1-F4) usadas pra produtividade atingível. Um ano é hidricamente adverso se ISNA da Fase I ≤ 0,70
+  **ou** ISNA da Fase III ≤ 0,55; cada (município, data de semeadura) é classificado pela
+  **frequência de anos adversos** nos 27 anos simulados: Risco climático 20%/30%/40%/Inapto (>40%)
+  — substituiu a versão anterior (média do ISNA ponderada por `ky`, corte ilustrativo 0,65/0,50).
+  - **Critérios (b) frio na floração, (c) geada e (d) excesso hídrico da mesma portaria não entram
+    na classificação final** — ficam só como colunas de diagnóstico
+    (`freq_frio_floracao`/`freq_geada`/`freq_excesso_faseIV` em `risco_climatico_oeste_pr.csv`). A
+    portaria pública não detalha como os 4 critérios se combinam: testamos união (qualquer critério
+    dispara → 300/300 "Inapto", com o critério de frio sozinho disparando em 83% dos anos —
+    implausível pra uma região onde o milho safrinha é cultivado rotineiramente) e "o critério mais
+    restritivo manda" (mais plausível, mas ainda concentrado em "Inapto", 0 combinações no nível
+    20%). Sem a definição oficial exata, ficamos só com o critério hídrico (a) pra não arriscar uma
+    combinação que pareça mais "oficial" do que realmente é.
+  - Resultado com só o critério (a): 181/300 "Inapto", 62 em 40%, 57 em 30%, **0 em 20%** — nenhuma
+    combinação atinge o nível de risco mais baixo nesse critério isolado.
+  - `df_wide_oeste.csv` precisou ser reconstruído por inteiro (recálculo via NASA POWER API, ~1.350
+    combinações município×ano, ~40 min) pra incluir as colunas das fases ZARC — se os limiares/fases
+    mudarem de novo, precisa reconstruir de novo.
 - **`09_analise_custo_modelos.ipynb`, seção 6** — custo de referência **SEAB/DERAL "Estimativa de
   Custos de Produção — Milho Safrinha"** (`nhistorico_94.xls`, aba `milho_saf`), 26 safras
   (1999/00–2024/25), decomposto em `custo_fixo_real` e `custo_var_kg_real` (deflacionados pelo
@@ -223,15 +248,21 @@ recomendação de melhor data de semeadura (antes só clima via ISNA + econômic
   (`previsoes_oeste_pr.csv`, `risco_climatico_oeste_pr.csv`, `risco_economico_oeste_pr.csv`). Se o
   `09` for reexecutado com dados novos, reexecute este notebook em seguida.
 - **Seções 1–4** — soma ordinal de tercis dos 3 eixos (clima + produtividade + econômico), mesma
-  lógica do `09`. Descobriu-se que ISNA e produtividade prevista têm correlação forte (Pearson
-  r≈0,85) — o componente hídrico acaba sendo ponderado duas vezes nessa abordagem.
+  lógica do `09` (note que o eixo climático agora tem **4 níveis**, não 3 — `ORDEM_CLIMA` mapeia
+  Risco climático 20%/30%/40%/Inapto para 0-3, então `score_integrado` vai de 0 a 7, não mais 0 a
+  6). Descobriu-se que ISNA e produtividade prevista têm correlação forte (Pearson r≈0,85) — o
+  componente hídrico acaba sendo ponderado duas vezes nessa abordagem.
 - **Seções 5–6** — resolve a redundância acima com **PCA** (reduz clima+produtividade a um único
-  `componente_agroclimatico`, explica ~92,5% da variância) seguido de **TOPSIS** (2 critérios:
+  `componente_agroclimatico`, a partir de `isna_medio` — o ISNA médio ponderado por `ky`, não a
+  classificação categórica nova — explica ~92,5% da variância) seguido de **TOPSIS** (2 critérios:
   componente agroclimático × margem econômica, pesos 50/50 ajustáveis na variável `pesos`) para
   gerar um `topsis_score` contínuo (0–1) — mais robusto que a soma ordinal por preservar magnitude
-  e não contar a água duas vezes. A recomendação de melhor data via TOPSIS muda em relação à do
-  `09` (2 eixos) em só 8/50 municípios, contra 35/50 na soma ordinal — o TOPSIS fica bem mais
-  próximo do comportamento original por resolver a redundância hídrica.
+  e não contar a água duas vezes.
+  - Com a classificação climática oficial do ZARC (seção 5 do `09`, ver acima — bem mais
+    concentrada em "Inapto" do que a média ilustrativa antiga), a recomendação de melhor data via
+    TOPSIS muda em relação à do `09` (2 eixos) em 42/50 municípios, e a soma ordinal muda em 16/50
+    — o próprio TOPSIS não mudou de cálculo (usa `isna_medio` contínuo, não a categoria), mas a
+    recomendação do `09` (que usa a categoria) mudou bastante, então a comparação também muda.
 - **Ambiente local (Mac, diferente do PC Windows descrito acima)**: `.venv/` criado na raiz do repo
   (fora do git, ver `.gitignore`) com `pandas numpy matplotlib scipy joblib scikit-learn requests
   ipywidgets nbformat nbclient ipykernel xlrd`; kernel Jupyter registrado como `aquacrop_ml_venv`
@@ -245,3 +276,40 @@ recomendação de melhor data de semeadura (antes só clima via ISNA + econômic
 | `melhor_data_semeadura_integrada.csv` | Melhor data por município via score ordinal |
 | `matriz_topsis_oeste_pr.csv` | 3 eixos + `componente_agroclimatico` (PCA) + `topsis_score` |
 | `melhor_data_semeadura_topsis.csv` | Melhor data por município via TOPSIS |
+
+---
+
+## Servidor MCP (`mcp_maiz/`) e consulta sem código (`11_assistente_perguntas.ipynb`)
+
+Chegaram ao repo via commit direto no GitHub (não criados nesta sessão) — expõem os resultados dos
+notebooks 06-10 como *tools* consultáveis, sem precisar abrir nenhum notebook.
+
+- **`mcp_maiz/data.py`** — camada **somente-leitura**: `_carregar()` só faz `pd.read_csv` num dos
+  CSVs que os notebooks 06-10 já exportam na raiz do repo (`melhor_data_semeadura_*.csv`,
+  `matriz_*_oeste_pr.csv`, `custo_deral_milho_safrinha.csv`, `precos_milho_pr.csv`, etc.), com
+  `@lru_cache(maxsize=None)` por nome de arquivo. Não recalcula nada e não tem nenhuma lógica
+  amarrada aos rótulos/categorias específicos das colunas (ex. os nomes das classes de
+  `risco_climatico`) — só filtra e devolve registros. **Por isso mudanças de metodologia nos
+  notebooks (ex. a reclassificação do risco climático via ZARC, seção 5 do `09` acima) não exigem
+  nenhuma alteração de código aqui**, só reexecutar os notebooks pra regerar os CSVs.
+  - **Ressalva de cache**: se o servidor MCP estiver rodando como processo persistente (ex. via
+    Claude Desktop/IDE), o `lru_cache` mantém os DataFrames antigos em memória mesmo depois dos
+    CSVs serem regenerados — **precisa reiniciar o processo** do servidor pra ele enxergar dados
+    novos. Não é um problema imediato aqui no Mac: o `.mcp.json` aponta pro Python do Windows
+    (`C:\Users\fabri\...`), então o servidor não roda nesta máquina.
+- **`mcp_maiz/pipeline.py`** — predição de produtividade "ao vivo" (`prever_produtividade_customizada`,
+  fase 2) pra **qualquer** município do Brasil, não só os 50 do Oeste do PR pré-calculados. É uma
+  **cópia adaptada e independente** da simulação de balanço hídrico do `09` (células 1, 3, 5, 7, 8,
+  10, 12 — ver docstring do arquivo), reescrita como funções puras (sem loop de 50 municípios × 27
+  anos, roda 1 combinação por vez). **Não inclui as fases/critérios do ZARC** adicionados nesta
+  sessão — só o balanço hídrico Doorenbos-Kassam (F1-F4) e a produtividade via ExtraTrees, porque
+  seu único propósito é prever produtividade, nunca fez classificação de risco climático. Continua
+  correto sem alteração, mas é uma **duplicação de código que pode dessincronizar** se
+  `simular_safra` do `09` mudar de novo em algo que afete a produtividade (ex. `DURACAO_CICLO`, Kc,
+  ky, definição das fases Doorenbos-Kassam) — nesse caso, `pipeline.py` precisaria ser atualizado
+  manualmente também.
+- **`11_assistente_perguntas.ipynb`** — formulário Colab (`ipywidgets`) que importa direto
+  `mcp_maiz/data.py`/`mcp_maiz/pipeline.py` como funções Python (não via protocolo MCP) pra dar uma
+  interface de menu, sem texto livre nem chave de API, pra pesquisadores consultarem os mesmos
+  dados. Roda como processo novo a cada execução no Colab, então não sofre do problema de cache do
+  item acima.
