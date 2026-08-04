@@ -223,8 +223,13 @@ antes de `07_analise_custos_milho_pr.ipynb`, na ordem.
     combinações município×data, então a ordenação relativa entre elas não se altera. Ou seja: o
     rateio muda a leitura de "o milho safrinha se paga sozinho?" (absoluta), mas não muda "qual
     município/data é relativamente melhor que outro?" (o que alimenta a matriz do notebook 10).
-  - Cenário principal (100%, `risco_economico_oeste_pr.csv`) continua sendo o que alimenta as seções
-    7-8 e o notebook `10` — o de 50% é só uma referência de sensibilidade por enquanto.
+  - **Os 3 cenários (100%, 50%, proporcional) entram lado a lado na matriz da seção 7** e em
+    `melhor_data_semeadura_por_municipio.csv` (colunas `margem_media_rs_ha_100pct`/`_rateio50`/
+    `_rateio_proporcional`) — mas como `risco_economico` (tercil) é idêntico nos 3, o `score_economico`
+    e o `score_combinado` não mudam entre cenários; só a margem em R$/ha (contínua) muda. O cenário
+    100% continua sendo o único usado pra classificar (`ORDEM_ECONOMICO`), os outros dois ficam como
+    referência numérica. Ver seção 6.1 do notebook `10` pra onde essa diferença contínua realmente
+    importa (TOPSIS).
 - **Seção 6.2 — rateio proporcional aos dias de ocupação**: não há literatura encontrada que
   justifique especificamente 50%; a alternativa mais defensável é ratear o custo fixo proporcional
   ao tempo que cada cultura ocupa a área (é esse tempo de uso que consome depreciação de
@@ -263,6 +268,19 @@ recomendação de melhor data de semeadura (antes só clima via ISNA + econômic
     TOPSIS muda em relação à do `09` (2 eixos) em 42/50 municípios, e a soma ordinal muda em 16/50
     — o próprio TOPSIS não mudou de cálculo (usa `isna_medio` contínuo, não a categoria), mas a
     recomendação do `09` (que usa a categoria) mudou bastante, então a comparação também muda.
+- **Seção 6.1 — sensibilidade do TOPSIS ao rateio do custo fixo**: `matriz_integrada` carrega a
+  margem dos 3 cenários (`margem_media_rs_ha_100pct`/`_rateio50`/`_rateio_proporcional` — ver 09,
+  seções 6.1/6.2), e `calcular_topsis()` é chamada uma vez pra cada, gerando
+  `topsis_score`/`topsis_score_rateio50`/`topsis_score_rateio_proporcional`. Diferente do
+  `score_economico` ordinal (idêntico nos 3 cenários porque usa só o tercil), o TOPSIS usa a margem
+  **contínua** na normalização vetorial e por isso **é sensível ao rateio**: correlação de Spearman
+  entre `topsis_score` (100%) e o de 50% é 0,9825 (22/50 municípios com melhor data diferente);
+  entre 100% e o proporcional (~41%) é 0,9996 (só 2/50 municípios mudam). Ou seja, o cenário de
+  rateio de 50% desloca a recomendação de data bem mais que o proporcional — outro motivo pra
+  preferir o proporcional como cenário de referência secundário, já que ele muda menos a
+  recomendação em relação ao cenário principal (100%). Exportado em
+  `melhor_data_semeadura_topsis_sensibilidade_rateio.csv`. O cenário 100% continua sendo o que
+  alimenta o heatmap e a exportação principal (`melhor_data_semeadura_topsis.csv`).
 - **Ambiente local (Mac, diferente do PC Windows descrito acima)**: `.venv/` criado na raiz do repo
   (fora do git, ver `.gitignore`) com `pandas numpy matplotlib scipy joblib scikit-learn requests
   ipywidgets nbformat nbclient ipykernel xlrd`; kernel Jupyter registrado como `aquacrop_ml_venv`
@@ -274,8 +292,9 @@ recomendação de melhor data de semeadura (antes só clima via ISNA + econômic
 |---|---|
 | `matriz_integrada_oeste_pr.csv` | 3 eixos + score ordinal por tercis (município × data de semeadura) |
 | `melhor_data_semeadura_integrada.csv` | Melhor data por município via score ordinal |
-| `matriz_topsis_oeste_pr.csv` | 3 eixos + `componente_agroclimatico` (PCA) + `topsis_score` |
-| `melhor_data_semeadura_topsis.csv` | Melhor data por município via TOPSIS |
+| `matriz_topsis_oeste_pr.csv` | 3 eixos + `componente_agroclimatico` (PCA) + `topsis_score` dos 3 cenários de rateio |
+| `melhor_data_semeadura_topsis.csv` | Melhor data por município via TOPSIS (cenário 100% do custo fixo) |
+| `melhor_data_semeadura_topsis_sensibilidade_rateio.csv` | Melhor data via TOPSIS nos 3 cenários lado a lado (seção 6.1) |
 
 ---
 
