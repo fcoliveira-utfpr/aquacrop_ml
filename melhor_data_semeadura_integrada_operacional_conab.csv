@@ -1,0 +1,51 @@
+﻿municipio,data_semeadura,risco_climatico,classe_produtividade,risco_economico,produtividade_media_kg_ha,margem_media_rs_ha,score_integrado
+Anahy,15/02/,Risco climático 30%,Alta produtividade prevista,Viabilidade intermediária,3254.8949451432845,43.95516455162894,2
+Assis Chateaubriand,25/02/,Risco climático 40%,Produtividade prevista intermediária,Viabilidade intermediária,3108.9533951502517,24.719024743154343,4
+Boa Vista da Aparecida,15/02/,Risco climático 30%,Alta produtividade prevista,Mais viável,3341.900707063746,92.29326153229756,1
+Braganey,15/02/,Risco climático 30%,Alta produtividade prevista,Mais viável,3395.7293459513135,90.31839267571114,1
+Cafelândia,15/03/,Inapto (risco > 40%),Alta produtividade prevista,Mais viável,3251.0641624230143,56.89392621617405,3
+Campo Bonito,15/02/,Risco climático 30%,Alta produtividade prevista,Mais viável,3401.6684533215575,91.86876350849982,1
+Capitão Leônidas Marques,25/02/,Risco climático 30%,Alta produtividade prevista,Mais viável,3274.123132711393,78.42436112051051,1
+Cascavel,25/02/,Risco climático 30%,Alta produtividade prevista,Mais viável,3405.620391161045,104.05224098926276,1
+Catanduvas,15/02/,Risco climático 30%,Alta produtividade prevista,Mais viável,3427.0191184730406,99.51844285153658,1
+Corbélia,15/02/,Risco climático 30%,Alta produtividade prevista,Viabilidade intermediária,3259.840685288991,45.34025395950611,2
+Céu Azul,25/02/,Risco climático 30%,Alta produtividade prevista,Mais viável,3267.296940008811,72.47302241814151,1
+Diamante D'Oeste,25/03/,Inapto (risco > 40%),Baixa produtividade prevista,Menos viável,2947.003902803163,-24.11805541939984,7
+Diamante do Sul,15/02/,Risco climático 30%,Alta produtividade prevista,Mais viável,3436.3617278992424,104.3394350910862,1
+Entre Rios do Oeste,15/02/,Risco climático 40%,Baixa produtividade prevista,Menos viável,2907.327841791437,-39.19141465803576,6
+Formosa do Oeste,15/02/,Risco climático 30%,Produtividade prevista intermediária,Viabilidade intermediária,3196.6067780990447,28.52920120041265,3
+Foz do Iguaçu,05/03/,Inapto (risco > 40%),Produtividade prevista intermediária,Mais viável,3198.9094795549117,65.1048833395074,4
+Guaraniaçu,15/02/,Risco climático 30%,Alta produtividade prevista,Mais viável,3425.4881266526913,99.05541564955068,1
+Guaíra,15/02/,Risco climático 40%,Baixa produtividade prevista,Menos viável,2942.26396170324,-29.29927453207177,6
+Ibema,15/02/,Risco climático 30%,Alta produtividade prevista,Mais viável,3413.9271836589764,95.98414107005556,1
+Iguatu,15/02/,Risco climático 30%,Alta produtividade prevista,Viabilidade intermediária,3266.1665990447427,47.11172090581621,2
+Iracema do Oeste,15/02/,Risco climático 30%,Produtividade prevista intermediária,Viabilidade intermediária,3208.0966200373796,31.26673452614429,3
+Itaipulândia,25/03/,Inapto (risco > 40%),Baixa produtividade prevista,Menos viável,2935.80428665549,-25.614678496106556,7
+Jesuítas,15/02/,Risco climático 30%,Produtividade prevista intermediária,Viabilidade intermediária,3208.120242716878,30.97922445696357,3
+Lindoeste,25/02/,Risco climático 30%,Alta produtividade prevista,Mais viável,3284.679979892379,80.47867472783119,1
+Marechal Cândido Rondon,15/02/,Risco climático 40%,Baixa produtividade prevista,Menos viável,2932.0690299042326,-34.79608629478922,6
+Maripá,25/02/,Risco climático 40%,Produtividade prevista intermediária,Viabilidade intermediária,3112.2775445107686,25.058279910184183,4
+Matelândia,25/02/,Risco climático 30%,Alta produtividade prevista,Mais viável,3279.695688622432,78.76343455961174,1
+Medianeira,05/03/,Inapto (risco > 40%),Produtividade prevista intermediária,Viabilidade intermediária,3142.894266054518,43.76355273560839,5
+Mercedes,15/02/,Risco climático 40%,Baixa produtividade prevista,Menos viável,2918.058956720288,-38.32719325099091,6
+Missal,25/03/,Inapto (risco > 40%),Baixa produtividade prevista,Menos viável,2930.213409331308,-27.53413597742008,7
+Nova Aurora,15/02/,Risco climático 30%,Produtividade prevista intermediária,Viabilidade intermediária,3218.158634617914,33.89158498905521,3
+Nova Santa Rosa,25/02/,Risco climático 40%,Produtividade prevista intermediária,Viabilidade intermediária,3106.2799014140173,23.67583618222677,4
+Ouro Verde do Oeste,25/02/,Risco climático 30%,Alta produtividade prevista,Mais viável,3237.5789581207364,64.07258672207851,1
+Palotina,25/02/,Risco climático 40%,Baixa produtividade prevista,Viabilidade intermediária,3089.604489888614,20.317605940857938,5
+Pato Bragado,25/02/,Inapto (risco > 40%),Baixa produtividade prevista,Menos viável,2970.877047909345,-3.705614270657485,7
+Quatro Pontes,05/03/,Risco climático 40%,Produtividade prevista intermediária,Viabilidade intermediária,3148.765560292379,33.68814570924717,4
+Ramilândia,25/03/,Inapto (risco > 40%),Baixa produtividade prevista,Menos viável,2948.2713687297137,-23.652433000074325,7
+Santa Helena,25/03/,Inapto (risco > 40%),Baixa produtividade prevista,Menos viável,2907.035623564633,-32.76743433854005,7
+Santa Lúcia,25/02/,Risco climático 30%,Alta produtividade prevista,Mais viável,3281.8996124653368,79.7879781661994,1
+Santa Tereza do Oeste,25/02/,Risco climático 30%,Alta produtividade prevista,Mais viável,3256.7886503265204,69.23635283613275,1
+Santa Terezinha de Itaipu,05/03/,Inapto (risco > 40%),Produtividade prevista intermediária,Viabilidade intermediária,3112.439385053215,41.87470165365751,5
+Serranópolis do Iguaçu,25/02/,Risco climático 30%,Alta produtividade prevista,Mais viável,3267.883090973464,77.1812046098437,1
+São José das Palmeiras,15/02/,Risco climático 40%,Baixa produtividade prevista,Menos viável,2901.325766788799,-38.66288456494721,6
+São Miguel do Iguaçu,25/02/,Risco climático 40%,Baixa produtividade prevista,Viabilidade intermediária,3035.55433598923,22.659223307352985,5
+São Pedro do Iguaçu,25/02/,Risco climático 30%,Alta produtividade prevista,Mais viável,3241.4810685672833,65.30307933576087,1
+Terra Roxa,25/03/,Inapto (risco > 40%),Baixa produtividade prevista,Menos viável,3023.3039996221332,4.59572984715195,7
+Toledo,25/02/,Risco climático 40%,Produtividade prevista intermediária,Viabilidade intermediária,3150.2458458466695,33.59209690235684,4
+Três Barras do Paraná,15/02/,Risco climático 30%,Alta produtividade prevista,Mais viável,3349.232777016311,91.98395400718285,1
+Tupãssi,25/02/,Risco climático 40%,Produtividade prevista intermediária,Viabilidade intermediária,3142.5200108693516,31.998677578982804,4
+Vera Cruz do Oeste,25/02/,Risco climático 30%,Alta produtividade prevista,Mais viável,3250.570829520382,67.60468043852217,1

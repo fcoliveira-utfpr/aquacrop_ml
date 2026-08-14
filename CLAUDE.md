@@ -10,9 +10,9 @@ build/lint/test — é um repositório de análise/pesquisa):
 
 1. **Predição de produtividade via balanço hídrico + ML** (`01`–`05`, pré-existente, migrado do
    Google Colab).
-2. **Análise de custos de produção do milho 2ª safra** (`06`–`10`, incluindo `09b`) — a fonte de
-   custo evoluiu de CONAB para **DERAL** no meio do trabalho; ver nota de descontinuação na seção
-   "Pipeline 2" abaixo antes de mexer em custo.
+2. **Análise de custos de produção do milho 2ª safra** (`06`–`10`, incluindo `09b`/`10b`) — a fonte
+   de custo evoluiu de CONAB para **DERAL** no meio do trabalho; ver nota de descontinuação na
+   seção "Pipeline 2" abaixo antes de mexer em custo.
 
 Os dois pipelines são independentes — não assuma que um depende do outro.
 
@@ -350,6 +350,29 @@ recomendação de melhor data de semeadura (antes só clima via ISNA + econômic
 | `matriz_topsis_oeste_pr.csv` | 3 eixos + `componente_agroclimatico` (PCA) + `topsis_score` dos 3 cenários de rateio |
 | `melhor_data_semeadura_topsis.csv` | Melhor data por município via TOPSIS (cenário 100% do custo fixo) |
 | `melhor_data_semeadura_topsis_sensibilidade_rateio.csv` | Melhor data via TOPSIS nos 3 cenários lado a lado (seção 6.1) |
+
+---
+
+## Notebook 10b — Análise integrada usando só o cenário Custo Operacional (CONAB)
+
+`10b_analise_integrada.ipynb` repete a estrutura do `10` (3 eixos: ISNA + produtividade prevista +
+econômico; soma ordinal seções 1-4; PCA+TOPSIS seções 5-6) usando **só** o cenário de custo fixo
+"Custo Operacional (CONAB)" do `09b` como eixo econômico — sem a seção 6.1 do `10` (sensibilidade
+ao rateio entre 100%/50%/proporcional), já que aqui há só um cenário, nada pra comparar entre
+cenários de custo. Resultado igual em estrutura ao `10` (Pearson ISNA×produtividade = 0,849, PCA
+explica 92,5% da variância) — só a magnitude da margem econômica (e por consequência o
+`topsis_score`) muda, por vir do cenário Operacional (CONAB) em vez do 100%. Depende dos CSVs do
+`09` (clima/produtividade) e do `09b` (`risco_economico_oeste_pr_operacional_conab.csv`) — reexecute
+se qualquer um dos dois mudar.
+
+### Arquivos gerados por este notebook
+
+| Arquivo | Conteúdo |
+|---|---|
+| `matriz_integrada_oeste_pr_operacional_conab.csv` | 3 eixos + score ordinal por tercis, cenário Operacional (CONAB) |
+| `melhor_data_semeadura_integrada_operacional_conab.csv` | Melhor data por município via score ordinal |
+| `matriz_topsis_oeste_pr_operacional_conab.csv` | 3 eixos + `componente_agroclimatico` (PCA) + `topsis_score`, cenário único |
+| `melhor_data_semeadura_topsis_operacional_conab.csv` | Melhor data por município via TOPSIS |
 
 ---
 
