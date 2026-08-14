@@ -295,6 +295,7 @@ terra), sem separar os dois. Investigação em duas partes, ambas reaproveitando
 | `risco_economico_oeste_pr_operacional_conab.csv` | Risco econômico (tercil + margem) via cenário Custo Operacional (CONAB) |
 | `matriz_risco_climatico_economico_oeste_pr_operacional_conab.csv` | Matriz risco climático × econômico com os 4 cenários de margem lado a lado |
 | `melhor_data_semeadura_por_municipio_operacional_conab.csv` | Melhor data por município via esse cenário |
+| `custo_deral_operacional_conab.csv` | Série de custo por safra (real/nominal) do cenário Operacional CONAB — mesmo formato de `custo_deral_milho_safrinha.csv`, mas com o fixo já descontado da Renda de Fatores; usada pelo `12` no gráfico de custo/preço |
 
 ---
 
