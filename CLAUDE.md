@@ -10,9 +10,9 @@ build/lint/test — é um repositório de análise/pesquisa):
 
 1. **Predição de produtividade via balanço hídrico + ML** (`01`–`05`, pré-existente, migrado do
    Google Colab).
-2. **Análise de custos de produção do milho 2ª safra** (`06`–`10`) — a fonte de custo evoluiu de
-   CONAB para **DERAL** no meio do trabalho; ver nota de descontinuação na seção "Pipeline 2"
-   abaixo antes de mexer em custo.
+2. **Análise de custos de produção do milho 2ª safra** (`06`–`10`, incluindo `09b`) — a fonte de
+   custo evoluiu de CONAB para **DERAL** no meio do trabalho; ver nota de descontinuação na seção
+   "Pipeline 2" abaixo antes de mexer em custo.
 
 Os dois pipelines são independentes — não assuma que um depende do outro.
 
@@ -240,6 +240,61 @@ antes de `07_analise_custos_milho_pr.ipynb`, na ordem.
   0/300 no cenário de 100% e 172/300 no de 50%) — mas, como nos outros cenários, a classificação
   relativa (`risco_economico`, tercil) continua **igual em 100% das combinações**, porque o desconto
   segue sendo aproximadamente uniforme por ano entre município×data.
+
+---
+
+## Notebook 09b — 4º cenário de custo fixo: "Custo Operacional (CONAB)"
+
+`09b_analise_custo_modelos.ipynb` nasceu de uma dúvida sobre a seção 6.1/6.2 do `09`: os cenários
+de rateio (50%/proporcional) descontam uma fração **assumida** do `custo_fixo_real` inteiro — mas
+esse "custo fixo" (DERAL, `nhistorico_94.xls`) mistura desembolso real (depreciação de máquina, mão
+de obra permanente) com custo **imputado** (Renda de Fatores — remuneração de capital próprio e da
+terra), sem separar os dois. Investigação em duas partes, ambas reaproveitando dados já no repo:
+
+- **Terra vs. máquina entre culturas** (`custos.xlsx`, aba `so_a_base` — consulta detalhada do site
+  SEAB/DERAL, 9 culturas × 5 datas recentes, não usada em nenhum outro notebook antes deste): a
+  **Remuneração da terra é idêntica** (R$ 1.491,02/ha) em milho 2ª safra, soja, café, feijão e
+  trigo — confirma que o DERAL atribui o custo de oportunidade da terra cheio a cada cultura, sem
+  descontar nada pela sucessão soja→milho safrinha na mesma área/ano. Já a depreciação de máquinas
+  **varia por cultura** (370 no milho safrinha vs. 410 na soja) — não há duplicação óbvia aí.
+- **Proporção Renda de Fatores/Custo Total, ano a ano** (`df_pr_long_deflacionado.csv`, pipeline
+  `06`/`07` — a série CONAB descontinuada como referência de custo *absoluto*, mas com a estrutura
+  de custo íntegra: tem as categorias `Custo Operacional (H)` e `Total Renda de Fatores (I)` que a
+  série DERAL não separa). A proporção agregada por ano parece instável (desvio-padrão 7% entre
+  anos) até quebrar por cidade: as 6 cidades do PR sobem/descem **juntas** dentro do mesmo ano
+  (desvio entre cidades no mesmo ano, 5,1%, menor que entre anos) — não é ruído de parsing, é
+  variação macro real (provavelmente juros — 2021, SELIC baixa da pandemia, teve a proporção mais
+  baixa da série, 6,1%; valorização da terra — 2015-2018 e 2023-2025 tiveram as mais altas, até
+  36,6%). Validado de duas formas: (1) a coluna `participacao_pct` já calculada na planilha bate com
+  o ratio derivado de `custo_rs_ha` até 2010, mas tem um bug de escala a partir de 2011 (fração vs.
+  ponto percentual — por isso não é usada); (2) `Custo Operacional (H)` bate com `Custo Total (J) −
+  Renda de Fatores (I)` com diferença de R$0,00/ha nos 27 anos.
+- **Cenário resultante**: `custo_operacional_real = custo_rs_ha_total_real × (1 − ratio_renda_fatores_conab[ano])`,
+  aplicado sobre a série DERAL (a fonte de custo absoluto não muda — só a *proporção* de quanto
+  descontar vem do CONAB, por não existir essa quebra na série DERAL). Ao contrário dos cenários
+  50%/proporcional (fração fixa em qualquer ano), esse desconto **varia ano a ano** seguindo a
+  proporção medida.
+- **Resultado**: reexecuta as seções 6-7 do `09` (risco econômico, matriz clima×econômico, melhor
+  data, mapa de calor) com esse 4º cenário lado a lado dos outros 3. Mesmo padrão já visto em 09:
+  efeito grande em termos absolutos (margem média salta de −R$898/ha no 100% para +R$32/ha no
+  Operacional CONAB), mas a classificação relativa (tercil) e a melhor data recomendada por
+  município **não mudam em nenhuma combinação** frente ao cenário 100% (0/300 e 0/50).
+- **Limitação principal**: a proporção vem do pacote CONAB "Alta Tecnologia" (~104 sc/ha), não do
+  próprio pacote DERAL "Milho Safrinha" (~60-80 sc/ha) — um pacote de maior insumo dilui o peso
+  relativo da Renda de Fatores no total, então a proporção medida (≈22% em média) pode estar
+  levemente subestimada frente ao pacote DERAL real (o snapshot único de `custos.xlsx` sugeriu
+  ≈29% pro milho 2ª safra no período mais recente). Não usa o `09` como dependência de execução —
+  só reaproveita os CSVs que ele já exporta (`previsoes_oeste_pr.csv`, `risco_climatico_oeste_pr.csv`,
+  `risco_economico_oeste_pr*.csv`, `custo_deral_milho_safrinha.csv`, `precos_milho_pr.csv`), mesma
+  lógica de reaproveitamento do `10`.
+
+### Arquivos gerados por este notebook
+
+| Arquivo | Conteúdo |
+|---|---|
+| `risco_economico_oeste_pr_operacional_conab.csv` | Risco econômico (tercil + margem) via cenário Custo Operacional (CONAB) |
+| `matriz_risco_climatico_economico_oeste_pr_operacional_conab.csv` | Matriz risco climático × econômico com os 4 cenários de margem lado a lado |
+| `melhor_data_semeadura_por_municipio_operacional_conab.csv` | Melhor data por município via esse cenário |
 
 ---
 
