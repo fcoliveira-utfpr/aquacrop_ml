@@ -377,6 +377,30 @@ se qualquer um dos dois mudar.
 
 ---
 
+## Notebook 12 — Relatório visual (Colab, roda 100% a partir do GitHub)
+
+`12_analise_milho_economica.ipynb` chegou ao repo via commit direto no Colab (não criado nesta
+sessão) — é um notebook de **apresentação**, não recalcula nada: baixa os CSVs já exportados
+direto do GitHub (`carregar()` lê de `raw.githubusercontent.com/.../main/`, não de arquivos
+locais — por isso só reflete o que já está **commitado e enviado ao GitHub**, não o estado local
+não commitado) e monta gráficos/mapas (`geobr` + `unidecode` para os polígonos municipais do PR)
+das seções de risco climático, econômico, PCA e TOPSIS.
+
+Reescrito nesta sessão para usar **só o cenário de custo fixo "Custo Operacional (CONAB)"**
+(`09b`/`10b`) como referência econômica em todo o notebook — a versão anterior comparava lado a
+lado os cenários 100%/rateio 50%/proporcional (boxplot de sensibilidade na seção de risco
+econômico, 3 mapas quase idênticos para margem e 3 para TOPSIS). Essa comparação foi removida: cada
+seção agora tem só 1 mapa/gráfico, usando os CSVs `_operacional_conab` do `09b`/`10b`. A seção de
+custo/preço também foi ajustada para usar `custo_deral_operacional_conab.csv` (novo, exportado pelo
+`09b`) em vez de `custo_deral_milho_safrinha.csv` — o custo fixo mostrado no stackplot varia ano a
+ano seguindo a proporção de Renda de Fatores medida no CONAB, não é mais um valor "cheio".
+
+**Dependência de ordem**: como este notebook lê do GitHub, qualquer novo cenário ou recálculo em
+`09`/`09b`/`10`/`10b` só aparece aqui depois de **commitado E enviado ao GitHub** — reexecutar
+localmente sem dar push antes não muda nada (vai continuar baixando a versão publicada).
+
+---
+
 ## Servidor MCP (`mcp_maiz/`) e consulta sem código (`11_assistente_perguntas.ipynb`)
 
 Chegaram ao repo via commit direto no GitHub (não criados nesta sessão) — expõem os resultados dos
